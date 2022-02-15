@@ -1,0 +1,37 @@
+* {margin: 0; padding: 0;}
+
+.bikeicon {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+.bikeicon img {
+  /* width: 100%; */
+}
+.tire01 {
+  position: absolute;
+  bottom: -4%;
+  left: 6%;
+  width: 32%;
+  z-index: -1;
+}
+.tire02 {
+  position: absolute;
+  bottom: -3%;
+  right: -3%;
+  width: 31%;
+  z-index: -1;
+}
+.tire-rotate {
+  animation: tire-rotate 1s linear infinite;
+}
+/* animation keyframe */
+@keyframes tire-rotate {
+  0 {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
