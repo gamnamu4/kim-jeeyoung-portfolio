@@ -1,6 +1,6 @@
 $('.menu li').mouseenter(function(){
-  $(this).children('.sub-menu').slideDown()
+  $(this).children('.sub-menu').stop().slideDown()
 })
 $('.menu li').mouseleave(function(){
-  $(this).children('.sub-menu').slideUp()
+  $(this).children('.sub-menu').stop().slideUp()
 })
