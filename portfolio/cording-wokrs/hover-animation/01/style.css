@@ -9,6 +9,7 @@ body {
   width: 400px;
   height: 400px;
   position: relative;
+  margin: 40px;
 }
 .square span {
   position: absolute;
@@ -18,6 +19,12 @@ body {
   border-radius: 40% 60% 65% 35% / 40% 54% 59%;
   transition: 0.5s;
   animation: circle 5s linear infinite;
+}
+.square:nth-child(2):hover span:nth-child(3) {
+  background-color: powderblue;
+}
+.square:nth-child(3):hover span:nth-child(3) {
+  background-color: plum;
 }
 .square:hover span:nth-child(1) {
   border: none;
