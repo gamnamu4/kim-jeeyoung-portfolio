@@ -1,0 +1,80 @@
+body {
+  background-color: #222;
+  font-size: 15px;
+}
+a {
+  text-decoration: none;
+}  
+.items {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.item {
+  display: inline-block;
+  height: 200px;
+  width: 300px;
+  position: relative;
+  margin: 30px;
+}
+.item:nth-child(2) a {
+  background-color: yellowgreen;
+}
+.item:nth-child(2) a:hover {
+  background-color: darkcyan;
+}
+.front, 
+.back {
+  position: absolute;
+  transition: 0.5s;
+  top: 0;
+}
+.front {
+  background-color: #333;
+  height: inherit;
+  text-align: center;
+  color: aliceblue;
+  padding: 20px;
+  width: 100%;
+  z-index: 1;
+}
+.item:hover .front img {
+  animation: ani 1s linear infinite;
+}
+.back {
+  background-color: #fff;
+  height: inherit;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.back p {
+  margin-top: 45px;
+  width: 300px;
+}
+.back a {
+  background-color: darkslateblue;
+  color: aliceblue;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+.back a:hover {
+  background-color: goldenrod;
+  color: #222;
+}
+.item:hover .front {
+  top: -50%;
+}
+.item:hover .back {
+  top: 50%;
+}
+/* animation keyframe */
+@keyframes ani {
+  0%,100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}

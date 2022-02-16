@@ -1,0 +1,39 @@
+/* Google Web Font */ 
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap'); /* Fontawesome 4.7 */ 
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); 
+
+body {
+  font-family: 'Raleway', sans-serif; 
+  background-color: darkcyan;
+}
+.gnb {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+}
+/* 순서 중요!!! */
+.gnb:hover a {
+  opacity: 0.3;
+}
+.gnb a:hover {
+  opacity: 1;
+}
+.gnb a {
+  text-decoration: none;
+  color: #222;
+  display: block;
+  font-size: 40px;
+  margin: 20px 0;
+  color: aliceblue;
+  transition: 0.5s;
+}
+.gnb a:before {
+  content: '\f105';
+  font-family: fontawesome;
+  margin-right: 10px;
+  opacity: 0;
+}
+.gnb a:hover:before {
+  opacity: 1;
+}
