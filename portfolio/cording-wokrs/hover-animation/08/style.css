@@ -1,0 +1,71 @@
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+.sns {
+  background-color: rgba(238, 238, 238, 0.644);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.178);
+}
+.sns a {
+  border: 5px solid #fff;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 40px;
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+}
+.sns a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  background-color: dodgerblue;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.sns a:hover:before {
+  height: 100%;
+}
+.sns a:nth-of-type(1):before {
+  background-color: #3b5999;
+}
+.sns a:nth-of-type(2):before {
+  background-color: #55acee;
+}
+.sns a:nth-of-type(3):before {
+  background-color: #dd4b39;
+}
+.sns a:nth-of-type(4):before {
+  background-color: #0077b5;
+}
+.sns a:nth-of-type(5):before {
+  background-color: #e4405f;
+}
+.sns a .fa {
+  position: relative;
+  transition: 0.5s;
+}
+.sns a:hover .fa {
+  transform: rotateY(360deg);
+  color: #fff;
+}
