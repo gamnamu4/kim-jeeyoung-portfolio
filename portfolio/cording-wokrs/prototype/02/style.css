@@ -63,13 +63,13 @@ a {
   transition: 0.5s;
   padding: 20px;
   box-sizing: border-box;
-  padding-top: 15px;
+  padding-top: 40px;
 }
 .gallery li:hover .content {
   bottom: 0;
   transition-delay: 0.5s;
 }
-.content:before {
+/* .content:before {
   content: '';
   position: absolute;
   background-color: #222;
@@ -79,4 +79,4 @@ a {
   top: -10px;
   transform-origin: left bottom;
   transform: rotate(-5deg) scale(1.3);
-}
+} */
