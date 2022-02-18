@@ -25,7 +25,7 @@ a {
   border-radius: 5px;
   padding: 10px;
   box-sizing: border-box;
-  padding-left: 40px;
+  padding-left: 50px;
   outline: none;
   transition: 0.3s;
 }
@@ -33,18 +33,22 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  color: gray;
+  color: #fff;
+  background-color: grey;
   font-size: 20px;
   width: 40px;
   height: 40px;
-  /* border: 1px solid blue; */
   text-align: center;
   line-height: 40px;
+  border-radius: 5px 0 0 5px;
 }
 .item input:focus {
   border: 1px solid rgba(30, 143, 255, 0.719);
   box-shadow: 0 0 5px rgba(30, 143, 255, 0.534);
 }
 .item input:focus + .fa {
-  color: rgba(30, 143, 255, 0.719);
+  background-color: rgba(30, 143, 255, 0.719);
+}
+.item input:focus::placeholder {
+  visibility: hidden;
 }
