@@ -37,5 +37,12 @@ body {
 }
 .progress-level {
   height: 10px;
-  background: linear-gradient(to right, rgb(64, 40, 182),  pink)
+  background: linear-gradient(to right, rgb(64, 40, 182), pink);
+  animation: ani 1s;
+}
+
+@keyframes ani {
+  0% {
+    width: 0;
+  }
 }
