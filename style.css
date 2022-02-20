@@ -8,10 +8,10 @@ body {
   font-family: 'Raleway', sans-serif;
   /* background-color: #222; */
   color: #fff;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; */
 }
 a {
   color: #222;
@@ -21,6 +21,8 @@ a {
 
 .dropdown {
   transition: 0.5s;
+  /* border: 1px solid red; */
+  display: inline-block;
 }
 .dropdown-btn {
   background-color: peru;
@@ -38,7 +40,7 @@ a {
 .dropdown-submenu a { 
   display: block;
   background-color: bisque;
-  width: 111px;
+  width: 106px;
   text-align: center;
   padding: 5px;
 }
