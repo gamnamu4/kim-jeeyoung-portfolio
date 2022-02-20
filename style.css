@@ -26,26 +26,34 @@ article {
   text-align: center;
   height: 300px;
   width: 300px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 20px;
   position: relative;
 }
 img {
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
-.article:hover {
+/* .article:hover {
   opacity: 0.9;
-  /* background-color: gray; */
-}
-article .segment {
+  background-color: gray;
+} */
+.segment {
   position: absolute;
   top: 0;
-  /* background-color: #222; */
   height: inherit;
   width: inherit;
   /* color:aliceblue ; */
+  /* background-color: #222; */
   padding: 30px;
+  padding-top: 30px;
   box-sizing: border-box;
+  opacity: 0;
+  transition: 0.5s;
+}
+.segment:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  color: aliceblue;
 }
 h2 {}
 p {
