@@ -1,26 +1,11 @@
-/* Google Web Font */
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-
-/* Fontawesome 4.7 */
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
 body {
-  font-family: 'Raleway', sans-serif;
-  /* background-color: #222; */
-  /* color: #fff; */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-a {
-  color: #222;
-  text-decoration: none;
-  font-family: 'Raleway', sans-serif;
-}
 
 .tab-inner {
-  /* border: 1px solid red; */
   width: 300px;
   height: 350px;
   position: relative;
@@ -33,35 +18,30 @@ input[name=tabmenu] {
 }
 .btn {
   position: absolute;
-  text-align: center;
   width: 100%;
-  bottom: 10px;
+  text-align: center;
+  bottom: 0;
 }
 .btn label {
-  background-color: lightgray;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  background-color: lightblue;
   border-radius: 50%;
   cursor: pointer;
 }
-
-input[id=tab1]:checked ~ .slide1 {
+input[id=tab1]:checked ~ .slide-1,
+input[id=tab2]:checked ~ .slide-2,
+input[id=tab3]:checked ~ .slide-3 {
   display: block;
 }
-input[id=tab2]:checked ~ .slide2 {
-  display: block;
-}
-input[id=tab3]:checked ~ .slide3 {
-  display: block;
-}
-
 input[id=tab1]:checked ~ .btn label[for=tab1] {
-  background-color: coral;
+  background-color: royalblue;
 }
 input[id=tab2]:checked ~ .btn label[for=tab2] {
-  background-color: coral;
+  background-color: palevioletred;
 }
 input[id=tab3]:checked ~ .btn label[for=tab3] {
-  background-color: coral;
+  background-color: darkred;
 }
