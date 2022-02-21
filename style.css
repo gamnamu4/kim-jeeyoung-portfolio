@@ -19,45 +19,43 @@ a {
   font-family: 'Raleway', sans-serif;
 }
 
-section {
-  display: flex;
-}
+.content {}
 article {
-  text-align: center;
-  height: 300px;
-  width: 300px;
   /* border: 1px solid red; */
-  margin: 20px;
+  /* width: 120px; */
+  display: inline-block;
+  text-align: center;
+}
+p {
+  background-color: #222;
+  color: aliceblue;
+  width: 130px;
+  padding: 20px;
+  border-radius: 10px;
   position: relative;
+  opacity: 0;
+  text-align: center;
+  transition: 0.5s;
+  visibility: hidden;
+}
+article:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+p:before {
+  content: '';
+  /* display: block; */
+  width: 20px;
+  height: 20px;
+  background-color: #222;
+  position: absolute;
+  transform: rotate(45deg) translateX(-50%);
+  left: 50%;
+  bottom: -10px;
+  
 }
 img {
-  /* transition: 0.5s; */
+  /* border: 1px solid red; */
+  
 }
-/* .article:hover {
-  opacity: 0.9;
-  background-color: gray;
-} */
-.segment {
-  position: absolute;
-  top: 0;
-  height: inherit;
-  width: inherit;
-  /* color:aliceblue ; */
-  /* background-color: #222; */
-  padding: 30px;
-  padding-top: 30px;
-  box-sizing: border-box;
-  opacity: 0;
-  transition: 0.5s;
-}
-.segment:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 1;
-  color: aliceblue;
-}
-h2 {}
-p {
-  /* width: 200px; */
-}
-span {}
-a {}
+
