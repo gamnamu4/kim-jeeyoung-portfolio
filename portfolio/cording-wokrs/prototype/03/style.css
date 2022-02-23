@@ -14,7 +14,10 @@ input[name=tabmenu] {
   display: none;
 }
 .content {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
 }
 .btn {
   position: absolute;
@@ -34,7 +37,8 @@ input[name=tabmenu] {
 input[id=tab1]:checked ~ .slide-1,
 input[id=tab2]:checked ~ .slide-2,
 input[id=tab3]:checked ~ .slide-3 {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 input[id=tab1]:checked ~ .btn label[for=tab1] {
   background-color: royalblue;
