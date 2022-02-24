@@ -6,83 +6,18 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: #222;
-  color: #fff;
-  display: flex;
+  /* background-color: #222; */
+  /* color: #fff; */
+  /* display: flex;
   justify-content: center;
   margin-left: 80px;
   align-items: center;
-  height: 100vh;
+  height: 100vh; */
 }
 a {
-  /* color: #222; */
-  color: aliceblue;
+  color: #222;
+  /* color: aliceblue; */
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
 }
 
-.content {
-
-}
-.article {
-  border: 1px solid greenyellow;
-  width: 300px;
-  height: 200px;
-  text-align: center;
-  position: relative;
-}
-.front,
-.back {
-  position: absolute;
-  transition: 0.5s;
-  /* top: 0; */
-}
-.front {
-  background-color: #222;
-  border: 1px solid red;
-  width: 300px;
-  height: 200px;
-  z-index: 1;
-  /* box-shadow: 0 0 20 black; */
-  /* transform: translateY(-50%); */
-}
-.front img {
-}
-.front p {
-  /* border: 2px solid salmon; */
-  margin-top: 0;
-}
-.back {
-  border: 1px solid blue;
-  background-color: #fff;
-  width: inherit;
-  height: inherit;
-  padding: 23px;
-  box-sizing: border-box;
-  /* transform: translateY(50%); */
-  
-}
-.back p {
-  color: #000;
-}
-.back a {
-  color: #000;
-  background-color: indianred;
-}
-
-
-.article:hover .front {
-  transform: translateY(-50%);
-}
-
-/* .article:hover .front {
-  top: -50%;
-} */
-
-.article:hover .back {
-  transform: translateY(50%);
-}
-
-/* .article:hover .back {
-  top: 50%;
-} */
