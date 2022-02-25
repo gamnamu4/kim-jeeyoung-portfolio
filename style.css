@@ -8,11 +8,10 @@ body {
   font-family: 'Raleway', sans-serif;
   /* background-color: #222; */
   /* color: #fff; */
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  margin-left: 80px;
   align-items: center;
-  height: 100vh; */
+  height: 100vh;
 }
 a {
   color: #222;
@@ -21,3 +20,38 @@ a {
   font-family: 'Raleway', sans-serif;
 }
 
+.gnb {
+  width: 400px;
+  background-color: antiquewhite;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+}
+.gnb li {
+  /* border: 1px solid rebeccapurple; */
+  display: inline-block;
+  margin: 20px;
+}
+.gnb li a {
+  /* margin: 20px; */
+  position: relative;
+}
+.gnb li a:before {
+  content: '';
+  position: absolute;
+  background-color: crimson;
+  height: 2px;
+  width: 0px;
+  bottom: -3px;
+  transition: 0.5s;
+  left: 50%;
+  /* left를 기준으로 50%만큼 배치했고, */
+  transform: translateX(-50%);
+  /* 자기 자신의 크기값 만큼 50%을 빼줬다. 
+  그렇게 되면 정중앙에 위치함. */
+}
+.gnb li a:hover:before {
+  width: 100%;
+} 
