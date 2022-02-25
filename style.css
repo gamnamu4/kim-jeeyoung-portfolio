@@ -20,38 +20,22 @@ a {
   font-family: 'Raleway', sans-serif;
 }
 
-.gnb {
-  width: 400px;
-  background-color: antiquewhite;
-  text-align: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-radius: 10px;
-}
-.gnb li {
-  /* border: 1px solid rebeccapurple; */
-  display: inline-block;
-  margin: 20px;
-}
-.gnb li a {
-  /* margin: 20px; */
+.gnb {}
+.gnb a {
   position: relative;
+  padding-bottom: 5px;
 }
-.gnb li a:before {
+.gnb a:before {
   content: '';
   position: absolute;
-  background-color: crimson;
-  height: 2px;
+  background-color: coral;
+  height: 1px;
   width: 0px;
-  bottom: -3px;
-  transition: 0.5s;
+  bottom: 0;
+  transition: 0.3s;
   left: 50%;
-  /* left를 기준으로 50%만큼 배치했고, */
   transform: translateX(-50%);
-  /* 자기 자신의 크기값 만큼 50%을 빼줬다. 
-  그렇게 되면 정중앙에 위치함. */
 }
-.gnb li a:hover:before {
+.gnb a:hover:before {
   width: 100%;
-} 
+}
