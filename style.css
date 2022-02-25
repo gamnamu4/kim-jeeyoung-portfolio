@@ -20,22 +20,3 @@ a {
   font-family: 'Raleway', sans-serif;
 }
 
-.gnb {}
-.gnb a {
-  position: relative;
-  padding-bottom: 5px;
-}
-.gnb a:before {
-  content: '';
-  position: absolute;
-  background-color: coral;
-  height: 1px;
-  width: 0px;
-  bottom: 0;
-  transition: 0.3s;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.gnb a:hover:before {
-  width: 100%;
-}
