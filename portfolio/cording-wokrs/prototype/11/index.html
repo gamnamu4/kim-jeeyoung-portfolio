@@ -38,12 +38,22 @@
       </div>
       <div class="content" id="tab4">
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium similique adipisci dolorem quisquam beatae, necessitatibus amet veniam perferendis. Rem quas molestias non libero nesciunt velit dolorum illo temporibus, tempore nisi dolore nobis recusandae magni quidem et, eos facere asperiores iusto veniam provident consequuntur laborum iste obcaecati? Beatae, explicabo architecto? Reiciendis illum fugiat quidem ullam. Rerum recusandae repellendus molestias expedita. Aperiam magnam optio cumque? Ex dolorum praesentium, magnam delectus officiis numquam suscipit exercitationem voluptatem. Id, possimus? Labore asperiores ex nulla voluptates?
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium similique adipisci dolorem quisquam beatae, necessitatibus amet veniam perferendis. Rem quas molestias non libero nesciunt velit dolorum illo temporibus, tempore nisi dolore nobis recusandae magni quidem et, eos facere asperiores iusto veniam provident consequuntur laborum iste obcaecati? Beatae, explicabo architecto? Reiciendis illum fugiat  Ex dolorum praesentium, magnam delectus officiis numquam suscipit exercitationem voluptatem. Id, possimus? Labore asperiores ex nulla voluptates?
         </p>
         <p>Chris, Printing Desinger</p>
       </div>
     </div>
   </div>
+
+  <script>
+    $('.testimoial-pic img').click(function(){
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+      
+      $('.testimonial .content').removeClass('active')
+      $('#' + $(this).attr('data-alt')).addClass('active')
+    })
+  </script>
 
 </body>
 </html>

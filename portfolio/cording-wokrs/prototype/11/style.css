@@ -38,7 +38,8 @@ a {
   width: 100px;
   filter: grayscale(1);
   margin: 10px;
-  transition: 0.5s;
+  transition: 0.3s;
+  cursor: pointer;
 }
 .testimoial-pic img.active {
   border-radius: 50%;
