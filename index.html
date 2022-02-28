@@ -9,31 +9,23 @@
 </head>
 <body> 
   
-  <div class="container">
-    <h1>javascript var, val(), if</h1>
-    <div class="login">
-      <h2>20세 이상 성인인증 체크 제이쿼리 if 조건문</h2>
-      <input id="id" type="text" placeholder="나이를 숫자로 입력">
-      <button>성인인증</button>
+  <div class="star-rating">
+    <div class="stars">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+    </div>
+    <div class="print">
+      별점 주실거죠?
     </div>
   </div>
 
   <script>
-    $('.login button').click(function(){
-      var num = $('#id').val()
-
-      if(num ==  '') {
-        alert('나이를 입력하세요.')
-      }
-      else if(num < 20) {
-        alert('미성년자 입니다.')
-      }
-      else if(num >= 20) {
-        alert('성인입니다.')
-      }
-      else {
-        alert('입력 내용을 숫자로 넣으세요.')
-      }
+    $('.stars .fa').click(function(){
+      $(this).addClass('active')
+      $(this).prevAll().addClass('active')
     })
   </script>
 
