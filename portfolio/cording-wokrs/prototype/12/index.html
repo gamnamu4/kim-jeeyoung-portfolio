@@ -10,21 +10,67 @@
 <body> 
   
   <section>
-    <ul class="btn">
-      <li class="active">HTML5</li>
-      <li>CSS</li>
-      <li>JQUERY</li>
-      <li>JAVASCRIPT</li>
-      <li>CSS FRAMEWORKS</li>
-    </ul>
-    <div class="tabs">
-      <div id="tab1" class="active">tab1<div>
-      <div id="tab2">tab2</div>
-      <div id="tab3">tab3</div>
-      <div id="tab4">tab4</div>
-      <div id="tab5">tab5</div>
+    <div class="heading">
+      <h1>인프런- <span>코딩웍스</span> 실전 퍼블리싱 강좌</h1>
+      <input type="text" placeholder="what are you looking for?">
+    </div>
+    <div class="tab-inner">
+      <ul class="btn">
+        <li data-alt="tab1" class="active">HTML5</li>
+        <li data-alt="tab2">CSS3</li>
+        <li data-alt="tab3">JQUERY</li>
+        <li data-alt="tab4">JAVASCRIPT</li>
+        <li data-alt="tab5">CSS FRAMEWORKS</li>
+      </ul>
+      <div class="tabs">
+        <div id="tab1" class="active">
+          <h2>HTML5</h2>
+          <img src="/imges/platform-logo-01.png">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid illum blanditiis obcaecati, dolorum doloremque sapiente numquam quia dolorem nobis odio officia, accusantium, reiciendis deserunt nihil tempore? Minus incidunt quas necessitatibus quam rem odio, voluptas quae perferendis, nam id iusto culpa voluptates quisquam dolorem excepturi in? Ut accusamus numquam, quam dolor eius corporis magni obcaecati libero provident officia cum dignissimos eligendi iure alias dolorum tempora, enim sapiente nobis rem voluptatum harum odio recusandae velit temporibus. Iusto mollitia cum deserunt. Maxime officia eum ea possimus soluta, aliquid impedit voluptatum tenetur laboriosam minus dignissimos molestiae inventore libero, veniam rem optio distinctio corrupti autem
+          </p>
+        </div>
+        <div id="tab2">
+          <h2>CSS3</h2>
+          <img src="/imges/platform-logo-02.png">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid illum blanditiis obcaecati, dolorum doloremque sapiente numquam quia dolorem nobis odio officia, accusantium, reiciendis deserunt nihil tempore? Minus incidunt quas necessitatibus quam rem odisquam dolorem excepturi in? Ut accusamus numquam, quam dolor eius corporis magni obcaecati libero provident officia cum dignissimos eligendi iure alias dolorum tempora, enim sapiente nobis rem voluptatum harum odio recusandae velit temporibus. Iusto mollitia cum deserunt. Maxime officia eum ea possimus soluta, aliquid impedit voluptatum tenetur laboriosam minus dignissimos molestiae inventore libero, veniam rem optio distinctio corrupti autem
+          </p>
+        </div>
+        <div id="tab3">
+          <h2>JQUERY</h2>
+          <img src="/imges/platform-logo-03.png">
+          <p>
+            quid illum blanditiis obcaecati, dolorum doloremque sapiente numquam quia dolorem nobis odio officia, accusantium, reiciendis deserunt nihil tempore? Minus incidunt quas necessitatibus quam rem odio, voluptas quae perferendis, nam id iusto culpa voluptates quisquam dolorem excepturi in? Ut accusamus numquam, quam dolor eius corporis magni obcaecati libero provident officia cum dignissimos eligendi iure alias dolorum tempora, enim sapiente nobis rem voluptatum harum odio recusandae velit temporibus. Iusto mollitia cum deserunt. Maxime officia eum ea possimus soluta, aliquid impedit voluptatum tenetur laboriosam minus dignissimos molestiae inventore libero, veniam rem optio distinctio corrupti autem
+          </p>
+        </div>
+        <div id="tab4">
+          <h2>JAVASCRIPT</h2>
+          <img src="/imges/platform-logo-04.png">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid illum blanditiis obcaecati, dolorum doloremque sapiente numquam quia dolorem nobis odio officia, accusantium, reiciendis deserunt nihil tempore? Minus incidunt quas necessitatibus quam rem odio, voluptas quae perferendis, nam id iusto culpa voluptates quisquam dolorem excepturi in? Ut accusamus numquam, quam dolor eius corporis magni obcaecati libero provident officia cum dignissimos eligendi iure alias dolorum tempora, enim sapiente nobis rem voluptatum harum odio recusandae velit temporibus. Iusto mollitia cum deserunt. Maxime officia eum ea possimus soluta, aliquid impedit volupt, veniam rem optio distinctio corrupti autem
+          </p>
+        </div>
+        <div id="tab5">
+          <h2>CSS FRAMEWORKS</h2>
+          <img src="/imges/platform-logo-05.png">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid illum blanditiis obcaecati, dolorum doloremque sapiente numquam quia dolorem nobis odio officia, accusantium, reiciendis deserunt nihil tempore? Minus incidunt quas necessitatibus quam rem odio, voluptas quae perferendis, nam id iusto culpa voluptates quisquam dolorem excepturi in? Ut accusamus numquam, quam dolor eius corporis magni obcaecati libero provident officia cum dignissimos eligendi iure alias dolorum tempora, enim sapiente nobis rem voluptatum harum odio recusandae velit temporibus. Iusto mollitia cum deserunt. Maxime officia eum ea possimus soluta, aliquid impedit voluptatum tenetur laboriosam minus dignissimos molestiae inventore libero, veniam rem optio distinctio corrupti autem
+          </p>
+        </div>
+      </div>
     </div>
   </section>
+
+  <script>
+    $('.btn li').click(function(){
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+      var result = $(this).attr('data-alt')
+      $('.tabs div').removeClass('active')
+      $('#' + result).addClass('active')
+    })
+  </script>
 
 </body>
 </html>
