@@ -18,20 +18,34 @@ a {
   text-decoration: none;
 }
 
-.container {
+.testimonial-section {
+  width: 800px;
   text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.158);
 }
-.login {
-  border: 1px solid #000;
-  padding: 30px;
+.testimonial-section h1 {
+  margin-bottom: 30px;
 }
-.login input[type=text],
-.login button {
-  padding: 10px;
-  outline: none;
+.testimonial-pic {}
+.testimonial-pic img  {
+  width: 100px;
+  margin: 10px;
+  filter: grayscale(1);
 }
-.login button {
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.testimonial-pic img.active  {
+  filter: grayscale(0);
+  border-radius: 50%;
+}
+.testimonial {}
+.testimonial .content {
+  display: none;
+}
+.testimonial .content.active{
+  display: block;
+}
+.testimonial .content p:nth-child(2){
+  font-weight: bold;
 }
