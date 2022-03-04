@@ -23,18 +23,18 @@ h1,h2,h3,h4,h5,h6 {
 /* item */
 .item {
   position: relative;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);
 }
 .item img {
-  
+  transition: 0.3s;
 }
 .item .detail {
   background-color: #f8f8f8;
   position: absolute;
   width: 100%;
-  /* bottom: -150px; */
-  bottom: 0;
+  bottom: -180px;
   left: 0;
   height: 250px;
   transition: 0.5s;
@@ -43,6 +43,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 .item:hover .detail {
   bottom: 0;
+}
+.item:hover img {
+  filter: blur(1px);
 }
 /* title */
 .title {
@@ -79,6 +82,10 @@ h1,h2,h3,h4,h5,h6 {
   display: block;
   margin-bottom: 5px;
 }
+.size span, 
+.color span {
+  transition: 0.3s;
+}
 .size span {
   font-size: 12px;
   margin-right: 5px;
@@ -91,7 +98,8 @@ h1,h2,h3,h4,h5,h6 {
   border-radius: 3px;
   cursor: pointer;
 }
-.size span.active {
+.size span.active,
+.size span:hover {
   background-color: #000;
   color: #fff;
 }
@@ -105,16 +113,16 @@ h1,h2,h3,h4,h5,h6 {
   border-radius: 50%;
 }
 .color span:nth-of-type(1) {
-  background-color: palegoldenrod;
+  background-color: rebeccapurple;
 }
 .color span:nth-of-type(2) {
-  background-color: palegreen;
+  background-color: darkcyan;
 }
 .color span:nth-of-type(3) {
-  background-color: paleturquoise;
+  background-color: maroon;
 }
 .color span:nth-of-type(4) {
-  background-color: palevioletred;
+  background-color: salmon;
 }
 .add-cart {
   border: 1px solid #ddd;
@@ -140,7 +148,7 @@ h1,h2,h3,h4,h5,h6 {
   right: 0;
   top: 0;
 }
-.like.active.before {
+.like.active:before {
   content: '\f004';
   color: crimson;
 }
