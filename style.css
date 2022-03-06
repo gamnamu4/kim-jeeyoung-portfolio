@@ -7,10 +7,10 @@
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #eee;
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; */
+  height: 100vh;
 }
 a {
   color: #222;
@@ -19,4 +19,37 @@ a {
 }
 
 .container {}
+.input {
+  display: none;
+}
 input[name=tab] {}
+.imges {
+  position: relative;
+  border: 1px solid blueviolet;
+}
+.imges div {
+  position: absolute;
+  border: 1px solid rebeccapurple;
+  width: 300px;
+  height: 300px;
+}
+.img1 {
+  /* background-image: url(/imges/slide-01.jpg); */
+}
+.img2 {}
+.img3 {}
+.label {
+  /* position: relative; */
+}
+label {
+  /* position: absolute; */
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid red;
+  background-color: palevioletred;
+}
+label[for=tab1] {
+}
+label[for=tab2] {}
+label[for=tab3] {}
