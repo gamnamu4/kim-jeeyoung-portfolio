@@ -13,9 +13,14 @@ body {
   height: 100vh;
 }
 a {
-  color: #222;
+  /* color: #222; */
   /* color: aliceblue; */
   text-decoration: none;
 }
 
-.
+.frame a {
+  display: block;
+}
+.frame a:link {
+  color: #000;
+}
