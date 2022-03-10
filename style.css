@@ -18,9 +18,3 @@ a {
   text-decoration: none;
 }
 
-.frame a {
-  display: block;
-}
-.frame a:link {
-  color: #000;
-}
