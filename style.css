@@ -7,44 +7,36 @@
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #eee;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; */
 }
 a {
-  /* color: #222; */
+  color: #222;
   /* color: aliceblue; */
   text-decoration: none;
 }
 
-.profile {
-  /* border: 1px solid rebeccapurple; */
-  background-color: #fff;
-  width: 500px;
-  height: 700px;
-  /* text-align: center; */
-  padding: 50px;
-  box-sizing: border-box;
-  border-radius: 30px;
-  position: relative;
-  padding-top: 120px;
-}
-.face {
+.content {
   border: 1px solid blue;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  display: block;
-  transform: translate(50%, -50%);
+  display: inline-block;
 }
-.profile h2 {
+button {
+}
+.dropdown {
+  border: 1px solid palevioletred;
+  display: none;
+}
+.dropdown a {
+  display: block;
+  /* border: 1px solid red; */
   text-align: center;
 }
-.profile ul {}
-.profile li {}
-.content {}
-.content h3 {}
-.content p {}
-.content button {}
-.content p {}
+.dropdown a:hover {
+  background-color: palevioletred
+}
+/* hover funcion */
+.content:hover .dropdown {
+  display: block;
+}
