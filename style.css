@@ -7,10 +7,10 @@
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #eee;
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; */
+  height: 100vh;
 }
 a {
   color: #222;
@@ -18,25 +18,32 @@ a {
   text-decoration: none;
 }
 
-.content {
-  border: 1px solid blue;
-  display: inline-block;
+.btn {
+  text-decoration: none;
+  border: 1px solid rebeccapurple;
+  padding: 7px 15px;
+  position: relative;
+  /* overflow: hidden; */
+  transition: 0.3s;
+  background-color: black;
+  color: #eee;
 }
-button {
+.btn:before {
+  content: '';
+  background-color: crimson;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  /* z-index: -1; */
 }
-.dropdown {
-  border: 1px solid palevioletred;
-  display: none;
+.btn span {
+  position: relative;
 }
-.dropdown a {
-  display: block;
-  /* border: 1px solid red; */
-  text-align: center;
-}
-.dropdown a:hover {
-  background-color: palevioletred
-}
-/* hover funcion */
-.content:hover .dropdown {
-  display: block;
+.btn:hover:before {
+  /* position: absolute; */
+  /* left: 0; */
+  width: 100%;
 }
