@@ -18,32 +18,21 @@ a {
   text-decoration: none;
 }
 
-.cool-btn {
-  width: 200px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  position: relative;
-  overflow: hidden;
+h1 {
+  border: 1px solid rebeccapurple;
+  margin: 0;
+  font-size: 39px;
 }
-.cool-btn:before,
-.cool-btn:after {
-  content: attr(data-text);
-  background-color: palevioletred;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: 0.3s;
+h1:before {
+  content: '{';
 }
-.cool-btn:after {
-  background-color: dodgerblue;
-  top: 100%;
+.heading span {
+  display: block;
+  font-weight: normal;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
-.cool-btn:hover:before {
-  top: -100%;
-}
-.cool-btn:hover:after {
-  top: 0;
+.heading em {
+  font-style: normal;
+  color: crimson;
 }
