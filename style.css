@@ -18,21 +18,32 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  border: 1px solid rebeccapurple;
-  margin: 0;
-  font-size: 39px;
+.button .btn {
+  width: 150px;
+  padding: 8px;
+  border-radius: 3px;
+  border: none;
+  text-transform: capitalize;
+  cursor: pointer;
 }
-h1:before {
-  content: '{';
+
+
+:root {
+  --primary: #3498db;
+  --confirm: #2ecc71;
+  --warning:  #f39c12;
+  --critical-warning: #e74c3c;
 }
-.heading span {
-  display: block;
-  font-weight: normal;
-  font-size: 30px;
-  margin-bottom: 10px;
+
+.button .primary {
+  background-color: var(--primary);
 }
-.heading em {
-  font-style: normal;
-  color: crimson;
+.button .confirm {
+  background-color: var(--confirm);
+}
+.button .warning {
+  background-color: var(--warning);
+}
+.button .critical-warning {
+  background-color: var(--critical-warning);
 }
