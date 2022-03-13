@@ -18,32 +18,30 @@ a {
   text-decoration: none;
 }
 
-.button .btn {
-  width: 150px;
-  padding: 8px;
-  border-radius: 3px;
-  border: none;
-  text-transform: capitalize;
-  cursor: pointer;
+.testimonial-section {
+  width: 800px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
 }
-
-
-:root {
-  --primary: #3498db;
-  --confirm: #2ecc71;
-  --warning:  #f39c12;
-  --critical-warning: #e74c3c;
+.testimonial-section h1 {}
+.testimonial-section h1 span {}
+.testimonial-pic {}
+.testimonial-pic img {
+  width: 100px;
+  filter: grayscale(1);
+  transition: 0.5s;
 }
-
-.button .primary {
-  background-color: var(--primary);
+.testimonial-pic img.active{
+  filter: grayscale(0);
+  border-radius: 50%;
 }
-.button .confirm {
-  background-color: var(--confirm);
+.testimonial {}
+.testimonial .content {
+  display: none;
 }
-.button .warning {
-  background-color: var(--warning);
+.testimonial .content.active {
+  display: block;
 }
-.button .critical-warning {
-  background-color: var(--critical-warning);
-}
+.testimonial .content p {}
