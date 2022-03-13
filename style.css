@@ -26,9 +26,13 @@ a {
   padding: 20px;
 }
 .testimonial-section h1 {}
-.testimonial-section h1 span {}
-.testimonial-pic {}
+.testimonial-section h1 span {
+  color: crimson;
+}
+.testimonial-pic {
+}
 .testimonial-pic img {
+  margin: 10px;
   width: 100px;
   filter: grayscale(1);
   transition: 0.5s;
@@ -44,4 +48,7 @@ a {
 .testimonial .content.active {
   display: block;
 }
-.testimonial .content p {}
+.testimonial .content p:nth-child(2) {
+  font-weight: bold;
+}
+
