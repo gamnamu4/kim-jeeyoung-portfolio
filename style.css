@@ -1,54 +1,23 @@
 /* Google Web Font */
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 /* Fontawesome 4.7 */
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', 'Montserrat', sans-serif;
   background-color: #eee;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-weight: 300;
 }
 a {
-  color: #222;
+  /* color: #222; */
   /* color: aliceblue; */
   text-decoration: none;
-}
-
-.testimonial-section {
-  width: 800px;
-  text-align: center;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-}
-.testimonial-section h1 {}
-.testimonial-section h1 span {
-  color: crimson;
-}
-.testimonial-pic {
-}
-.testimonial-pic img {
-  margin: 10px;
-  width: 100px;
-  filter: grayscale(1);
-  transition: 0.5s;
-}
-.testimonial-pic img.active{
-  filter: grayscale(0);
-  border-radius: 50%;
-}
-.testimonial {}
-.testimonial .content {
-  display: none;
-}
-.testimonial .content.active {
-  display: block;
-}
-.testimonial .content p:nth-child(2) {
-  font-weight: bold;
 }
 
