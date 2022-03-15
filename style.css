@@ -19,26 +19,17 @@ a {
 }
 
 :root {
-  --one: royalblue;
-  --two: yellowgreen;
-  --three: lightgrey;
-  --four: pink;
+  --big: 50px;
+  --medium: 30px;
+  --small: 14px;
 }
-.btn {
-  border: none;
-  padding: 5px 20px;
-  border-radius: 5px;
-  color: #fff;
+
+.container h1 {
+  font-size: var(--big);
 }
-div button:nth-child(1) {
-  background-color: var(--one);
+.container h3 {
+  font-size: var(--medium);
 }
-div button:nth-child(2) {
-  background-color: var(--two);
-}
-div button:nth-child(3) {
-  background-color: var(--three);
-}
-div button:nth-child(4) {
-  background-color: var(--four);
+.container p {
+  font-size: var(--small);
 }
