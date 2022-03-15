@@ -1,19 +1,16 @@
 /* Google Web Font */
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 /* Fontawesome 4.7 */
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body {
-  font-family: 'Raleway', 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: #eee;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-weight: 300;
 }
 a {
   /* color: #222; */
@@ -21,3 +18,27 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --one: royalblue;
+  --two: yellowgreen;
+  --three: lightgrey;
+  --four: pink;
+}
+.btn {
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+div button:nth-child(1) {
+  background-color: var(--one);
+}
+div button:nth-child(2) {
+  background-color: var(--two);
+}
+div button:nth-child(3) {
+  background-color: var(--three);
+}
+div button:nth-child(4) {
+  background-color: var(--four);
+}
