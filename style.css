@@ -18,18 +18,3 @@ a {
   text-decoration: none;
 }
 
-:root {
-  --big: 50px;
-  --medium: 30px;
-  --small: 14px;
-}
-
-.container h1 {
-  font-size: var(--big);
-}
-.container h3 {
-  font-size: var(--medium);
-}
-.container p {
-  font-size: var(--small);
-}
