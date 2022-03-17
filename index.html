@@ -11,14 +11,30 @@
 <body>  
 
   <div class="container">
-    <input type="checkbox" id="chk">
-    <label for="chk">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <div class="sidebar"></div>
+    <header class="">
+      <div class="lnb-inner">LNB inner</div>
+      <div class="gnb-inner">GNB inner</div>
+    </header>
+    <section>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsa, cum quae, soluta nobis numquam possimus sequi accusantium aliquam porro fugiat itaque consequuntur vero aliquid facilis odit minima hic? Rem, doloribus voluptatum quibusdam iusto mollitia ea asperiores similique fuga esse architecto beatae iure ducimus impedit ad fugiat quis reiciendis alias? Nam sequi ea sint explicabo et eos. Dolore blanditiis aperiam consequuntur veniam repellendus nihil repellat! Eos dolores odio laboriosam nobis quidem magnam iusto qui, corrupti adipisci, autem sunt porro pariatur voluptate veniam illo. Itaque non explicabo eius velit nesciunt excepturi. Dicta vero consequuntur vitae quas est? Minima explicabo perspiciatis sed!
+      </p>
+    </section>
   </div>
+
+  <a class="btn-top" href="#none"><i class="fa fa-arrow-up"></i> </a>
+
+  <script>
+    //header active class
+    $(window).scroll(function(){
+      if($(window).scrollTop() > 50) {
+        $('header, .btn-top').addClass('active')
+      }
+      else {
+        $('header, .btn-top').removeClass('active')
+      }
+    })
+  </script>
 
 </body>
 </html>
