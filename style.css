@@ -7,10 +7,10 @@
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #eee;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; */
 }
 a {
   /* color: #222; */
@@ -18,3 +18,46 @@ a {
   text-decoration: none;
 }
 
+.container {}
+input[id=chk] {
+  display: none;
+}
+label[for=chk] {
+  position: relative;
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+  display: block;
+  cursor: pointer;
+  
+}
+label[for=chk] span {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 5px;
+  /* border: 1px solid red; */
+  transition: 0.3s;
+}
+label[for=chk] span:nth-child(1) {
+  top: 0;
+}
+label[for=chk] span:nth-child(2) {
+  top: 50%;
+}
+label[for=chk] span:nth-child(3) {
+  top: 100%;
+}
+
+
+input[id=chk]:checked + label span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 50%;
+}
+input[id=chk]:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+input[id=chk]:checked + label span:nth-child(3) {
+  transform: rotate(-50deg);
+  top: 50%;
+}
