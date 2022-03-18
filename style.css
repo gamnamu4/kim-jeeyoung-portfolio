@@ -32,6 +32,12 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0.5;
+  transition: 0.5s;
+  
+}
+.modal.active {
+  opacity: 1; 
 }
 .modal-content {
   width: 600px;
@@ -51,10 +57,28 @@ a {
 }
 .desc {
   flex: 2;
+  text-align: center;
 }
-.desc-header {}
-.desc-header h2 {}
-.desc-header button {}
+.desc-header {
+  /* position: relative; */
+  width: 380px;
+  height: 60px;
+}
+.desc-header h2 {
+}
+.btn-close {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: #ccc;
+  font-size: 28px;
+  cursor: pointer;
+}
+.btn-close:hover {
+  color: #000;
+}
 .desc-content {}
 input[type=email] {}
 input[type=email] button {}
@@ -67,4 +91,53 @@ input[type=email] p {}
   top: 0;
   left: 0;
   z-index: -1;
+  opacity: 0.5;
+  transition: 0.5s;
+  background-color: red;
+}
+.overlay.active {
+  opacity: 1;
+}
+.desc-content input[type=email] {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 7px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.desc-content input[type=email]::placeholder {
+  color: #bbb;
+  transition: 0.5s;
+}
+.desc-content input[type=email]:focus::placeholder {
+  visibility: hidden;
+  opacity: 0;
+}
+.desc-content button {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: crimson;
+  cursor: pointer;
+  padding: 7px;
+  outline: none;
+}
+.overlay {
+  opacity: 0;
+}
+
+
+@media (max-width: 768px) {
+  .modal-content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .modal-content > div {
+    width: 350px;
+  }
+  .photo {
+    flex-basis: 250px;
+  }
 }

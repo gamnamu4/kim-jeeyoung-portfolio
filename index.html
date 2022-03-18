@@ -10,6 +10,7 @@
 </head>
 <body>  
 
+  <div class="btn-open">뉴스레터 구독하기</div>
   <div class="modal">
     <div class="modal-content">
       <div class="photo"></div>
@@ -29,9 +30,13 @@
       </div>
     </div>
   </div>
-  <div class="overlay">  
-    
-  </div>
+  <div class="overlay"></div>
+
+  <script>
+    $('.btn-open').click(function(){
+      $('.modal, overlay').addClass('active')
+    })
+  </script>
 
 </body>
 </html>
