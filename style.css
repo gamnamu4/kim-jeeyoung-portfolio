@@ -1,20 +1,70 @@
 /* Google Web Font */
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 /* Fontawesome 4.7 */
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
+* {
+  font-family: 'Raleway', 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #222;
+  font-size: 15px;
+  line-height: 1.6em;
   background-color: #eee;
   /* display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh; */
-  margin: 0;
 }
 a {
   /* color: #222; */
   /* color: aliceblue; */
   text-decoration: none;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-content {
+  width: 600px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+  display: flex;
+  overflow: hidden;
+}
+.modal-content > div {
+  padding: 20px;
+  
+}
+.photo {
+  flex: 1;
+  background: url(/imges/crew-01.jpg) no-repeat center center;
+}
+.desc {
+  flex: 2;
+}
+.desc-header {}
+.desc-header h2 {}
+.desc-header button {}
+.desc-content {}
+input[type=email] {}
+input[type=email] button {}
+input[type=email] p {}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.187);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
