@@ -172,3 +172,68 @@ hr.bar {
   background-color: crimson;
   margin: 30px auto;
 }
+
+/* ########### section : location ########## */
+.location-inner {
+  background: url(/portfolio/website-works/01/images/background-location.jpg) no-repeat center center;
+  height: 100vh;
+}
+.location-inner:before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.769);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.feature {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #bbb;
+}
+.feature > div {
+  float: left;
+}
+.office {
+  width: 60%;
+  padding-right: 100px;
+}
+.service {
+  width: 40%;
+}
+.Headquarters {}
+.Headquarters b {}
+.office b {
+  font-weight: normal;
+}
+.office h2 {
+  color: #1db1f0;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 15px;
+  text-align: left;
+}
+.office p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.office span {
+  color: #fff;
+}
+.customer-service {
+  margin-top: 40px;
+}
+.service-item {
+  margin-bottom: 40px;
+}
+.service-item .fa {
+  color: #1db1f0;
+  font-size: 40px;
+}
+.service-item h3 {
+  color: #fff;
+  font-size: 22px;
+  margin: 0;
+}
