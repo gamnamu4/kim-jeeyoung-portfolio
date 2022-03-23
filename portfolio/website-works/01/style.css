@@ -90,6 +90,28 @@ header {
   text-align: center;
   width: 70%;
 }
+.about-heading h2 {
+  margin: 0;
+}
+.about-heading p {
+  color: #999;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.view-awards {
+  transition: 0.3s;
+  color: #ddd;
+  border: 1px solid #bbb;
+  padding: 5px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 10px;
+}
+.view-awards:hover {
+  background-color: #31c0ce;
+  color: #fff;
+  border-color: transparent;
+}
 .victory-jump {
   background-color: #fff;
 }
@@ -99,4 +121,11 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
+}
+hr.bar {
+  width: 50px;
+  height: 4px;
+  border: none;
+  background-color: crimson;
+  margin: 30px auto;
 }
