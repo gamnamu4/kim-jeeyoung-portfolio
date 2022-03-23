@@ -67,6 +67,49 @@ header {
   font-style: italic;
 }
 
+
+/* ########### section : about ########### */
+.about-inner {
+  height: 100%;
+  background: #0dace3 url(/portfolio/website-works/01/images/line-drawing.png) no-repeat right bottom;
+}
+.about-items {
+  width: 60%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 100px;
+}
+.item {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.item:hover img {
+  filter: invert(0);
+}
+.item:hover h3 {
+  color: #000;
+}
+.item img {
+  height: 130px;
+  float: left;
+  margin-right: 40px;
+  filter: invert(1);
+  transition: 0.3s;
+}
+.item h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+  transition: 0.5s;
+  letter-spacing: -1px;
+}
+.item p {
+  font-size: 18px;
+  overflow: hidden;
+}
+
 /* ########### section : awards winner ########## */
 .awards-inner {
   height: 100%;
