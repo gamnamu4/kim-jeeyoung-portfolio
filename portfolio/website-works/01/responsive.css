@@ -1,4 +1,7 @@
-@media (max-width: 768px)  {
+@media (max-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
   /* Entire Layout */
   .cd-section {
     height: auto;
@@ -13,6 +16,14 @@
   }
 
   /* header */
+  header {
+    transition: 0.5s;
+    z-index: 100;
+  }
+  header.active {
+    background-color: #fff;
+    border: 1px solid #eee;
+  }
   .menu {
     display: block;
   }
@@ -24,9 +35,14 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 250px;
+    width: 270px;
+    right: -250px;
     height: 100vh;
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.137);
+    transition: 0.5s;
+  }
+  .gnb.active {
+    right: 0;
   }
   .menu {
     line-height: 40px;
@@ -52,9 +68,9 @@
   .trigger span {
     position: absolute;
     background-color: #000;
-    width: 20px;
+    width: 100%;
     height: 2px;
-    transition: 0.3s;
+    transition: 0.5s;
   }
   .trigger span:nth-child(1) {
     top: 0;
@@ -66,7 +82,6 @@
   .trigger span:nth-child(3) {
     top: 100%;
   }
-
   .trigger.active span:nth-child(1) {
     top: 50%;
     transform: rotate(45deg);
@@ -79,6 +94,27 @@
   .trigger.active span:nth-child(3) {
     top: 50%;
     transform: rotate(-45deg);
+  }
+
+  /* Gototop */
+  .gototop {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border: 3px solid red;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .gototop.active {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
