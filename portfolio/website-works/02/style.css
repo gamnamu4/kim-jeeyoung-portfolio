@@ -183,3 +183,53 @@ section {
 .preview img {
   height: 350px;
 }
+
+/* Section : FAQ */
+.faq {
+  padding: 80px 0;
+}
+.faq-inner {
+  width: 850px;
+  margin: auto;
+}
+.faq-inner h1 {
+  text-align: center;
+  font-size: 50px;
+}
+input[name=faq] {
+  display: none;
+}
+input[name=faq] + label {
+  display: block;
+  background-color: #303030;
+  padding: 15px;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+.faq-content {
+  background-color: #303030;
+  margin-bottom: 10px;
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+input[name=faq] + label span {
+  float: right;
+  font-size: 35px;
+  transition: 0.3s;
+}
+aside {
+  text-align: center;
+}
+aside p {
+  font-size: 24px;
+}
+/* checked function */
+input[name=faq]:checked + label + .faq-content {
+  max-height: 500px;
+  padding: 15px;
+}
+input[name=faq]:checked + label span {
+  transform: rotate(45deg);
+}
