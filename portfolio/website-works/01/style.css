@@ -89,7 +89,7 @@ header {
 /* ########### section : about ########### */
 .about-inner {
   height: 100%;
-  background: #0dace3 url(portfolio/website-works/01/images/line-drawing.png) no-repeat right bottom;
+  background: #0dace3 url(../01/images/line-drawing.png) no-repeat right bottom;
 }
 .about-items {
   width: 60%;
@@ -243,7 +243,7 @@ hr.bar {
 
 /* ########### section : location ########## */
 .location-inner {
-  background: url(portfolio/website-works/01/images/background-location.jpg) no-repeat center center;
+  background: url(../01/images/background-location.jpg) no-repeat center center;
   height: 100vh;
 }
 .location-inner:before {
