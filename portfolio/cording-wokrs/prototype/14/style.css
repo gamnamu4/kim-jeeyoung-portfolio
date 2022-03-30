@@ -30,7 +30,6 @@ section article {
 }
 .heading {
   text-align: center;
-
 }
 .heading span {
   color: crimson;
@@ -46,18 +45,16 @@ section article {
 }
 .heading h1 em:after {
   position: absolute;
-  content: url(/imges/logo-kakao.png);
+  content: url(../14/img/logo-kakao.png);
   right: -35px;
   top: -30px;
 }
-.content {}
 .content > div {
   width: 50%;
   float: left;
   height: 400px;
   box-sizing: border-box;
 }
-.accordion {}
 .title {
   border: 1px solid #ddd;
   padding: 5px;
@@ -91,4 +88,3 @@ section article {
 .desc.active {
   display: block;
 }
-.image {}

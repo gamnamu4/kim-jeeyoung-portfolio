@@ -31,19 +31,19 @@ a {
   border-right: none;
 }
 .gallery li:nth-child(1) {
-  background: url(/imges/IMG_01.jpg) no-repeat center center;
+  background: url(../02/img/IMG_01.jpg) no-repeat center center;
 }
 .gallery li:nth-child(2) {
-  background: url(/imges/IMG_02.jpg) no-repeat center center;
+  background: url(../02/img/IMG_02.jpg) no-repeat center center;
 }
 .gallery li:nth-child(3) {
-  background: url(/imges/IMG_03.jpg) no-repeat center center;
+  background: url(../02/img/IMG_03.jpg) no-repeat center center;
 }
 .gallery li:nth-child(4) {
-  background: url(/imges/IMG_04.jpg) no-repeat center center;
+  background: url(../02/img/IMG_04.jpg) no-repeat center center;
 }
 .gallery li:nth-child(5) {
-  background: url(/imges/IMG_05.jpg) no-repeat center center;
+  background: url(../02/img/IMG_05.jpg) no-repeat center center;
 }
 .gallery:hover li {
   flex: 1;

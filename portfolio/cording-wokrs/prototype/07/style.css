@@ -31,14 +31,14 @@ input[name=tabmenu] {
 }
 
 .items div:nth-child(1) {
-  background: url(/imges/photo-01.jpg) no-repeat center center fixed;
+  background: url(../07/img/photo-01.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 .items div:nth-child(2) {
-  background: url(/imges/photo-02.jpg) no-repeat center center fixed;
+  background: url(../07/img/photo-02.jpg) no-repeat center center fixed;
 }
 .items div:nth-child(3) {
-  background: url(/imges/photo-03.jpg) no-repeat center center fixed;
+  background: url(../07/img/photo-03.jpg) no-repeat center center fixed;
 }
 
 .items div h1 {
