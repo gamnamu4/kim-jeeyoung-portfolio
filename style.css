@@ -35,7 +35,6 @@ body {
   padding: 15px 55px;
   
 }
-
 .container {
   width: 1200px;
   margin: auto;
@@ -43,12 +42,7 @@ body {
 
 /* ######### header ######## */
 header {
-  /* width: 1200px; */
-  /* padding: 15px 55px; */
   overflow: hidden;
-}
-.logo {
-  
 }
 .logo h1 {
   font-size: 48px;
@@ -66,8 +60,6 @@ nav a {
   text-decoration: none;
   text-align: right;
 }
-nav a:nth-child(1){}
-nav a:nth-child(2){}
 
 /* ######## section ####### */
 section {
@@ -76,16 +68,17 @@ section {
   width: 1200px;
   height: 400px;
   display: inline-block;
-  /* overflow: hidden; */
   text-align: center;
-  margin-bottom: -15px;
+  margin-bottom: 0px;
   display: flex;
-
+}
+section article:last-child {
+  border: none;
 }
 
 /* ######## article####### */
 article {
-  border: 3px solid rebeccapurple;
+  border-right: 2px solid #000;
   width: 400px;
   height: 400px;
   position: relative;
@@ -96,31 +89,32 @@ article {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
-  height: 300px;
+  height: 400px;
   background-image: url('imges/slide-01.jpg');
   background-size: 400px;
   background-repeat: no-repeat;
   background-position: center center;
-  z-index: -100;
-  
+  background-size: cover;
+  /* z-index: -100; */
+  transition: 0.5s;
+  cursor: pointer;
 }
-.detail {
-  
+.img:hover {
+  filter: opacity(10%);
 }
-.detail h4 {
-  margin: 0;
+.desc {
+  padding: 30px;
   text-align: left;
+  overflow: hidden;
+  /* position: relative; */
 }
-summary {
-  /* overflow: hidden; */
-}
-summary p {
-  /* vertical-align: middle; */
-  
-}
-summary p:nth-child(1) {
+.desc h4 {}
+.desc p {
   float: left;
 }
-summary p:nth-child(2) {
+.desc p:nth-child(1) {
+
+}
+.desc p:nth-of-type(2) {
   float: right;
 }
