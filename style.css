@@ -97,13 +97,8 @@ article {
   transition: 0.5s;
   cursor: pointer;
 }
-.img:before {
-
-}
 .img:hover {
   opacity: 0.1;
-
-  
 }
 .desc {
   padding: 60px;

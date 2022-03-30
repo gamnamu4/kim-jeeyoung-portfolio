@@ -80,7 +80,7 @@ section {
 /* Section: welcome */
 .welcome {
   height: 80vh;
-  background: url(../02/images/main.jpg) no-repeat center center;
+  background: url(/portfolio/website-works/02/images/main.jpg) no-repeat center center;
   background-size: cover;
   position: relative;
 }
