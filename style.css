@@ -1,145 +1,126 @@
-/* Google Web Font */
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+font-family: 'Noto Sans KR', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-
+font-family: 'Raleway', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+font-family: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+font-family: 'Source Sans Pro', sans-serif;
+/* Web Fonts : Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+font-family: 'Lato', sans-serif;
+/* Noonnu Korean Fonts */
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 /* Fontawesome 4.7 */
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 
 * {
-  font-family: 'Raleway', 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
-
 body {
-  font-weight: 300;
-  color: #222;
-  font-size: 15px;
+  margin: 0;
   line-height: 1.6em;
-  background-color: #eee;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; */
-}
-a {
-  /* color: #222; */
-  /* color: aliceblue; */
-  text-decoration: none;
-}
-
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.7);
-  opacity: 0.5;
-  transition: 0.5s;
+  font-size: 26px;
+  padding: 15px 55px;
   
 }
-.modal.active {
-  opacity: 1; 
+
+.container {
+  width: 1200px;
+  margin: auto;
 }
-.modal-content {
-  width: 600px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
-  display: flex;
+
+/* ######### header ######## */
+header {
+  /* width: 1200px; */
+  /* padding: 15px 55px; */
   overflow: hidden;
 }
-.modal-content > div {
-  padding: 20px;
+.logo {
   
 }
-.photo {
-  flex: 1;
-  background: url(/imges/crew-01.jpg) no-repeat center center;
+.logo h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  float: left;
 }
-.desc {
-  flex: 2;
-  text-align: center;
+
+/* nav */
+nav {
+  float: right;
 }
-.desc-header {
-  /* position: relative; */
-  width: 380px;
-  height: 60px;
-}
-.desc-header h2 {
-}
-.btn-close {
-  position: absolute;
-  top: 0px;
-  right: 10px;
-  background-color: transparent;
-  border: none;
-  color: #ccc;
-  font-size: 28px;
-  cursor: pointer;
-}
-.btn-close:hover {
+nav a {
+  display: block;
   color: #000;
+  text-decoration: none;
+  text-align: right;
 }
-.desc-content {}
-input[type=email] {}
-input[type=email] button {}
-input[type=email] p {}
-.overlay {
-  background-color: rgba(0, 0, 0, 0.187);
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0.5;
-  transition: 0.5s;
-  background-color: red;
-}
-.overlay.active {
-  opacity: 1;
-}
-.desc-content input[type=email] {
-  display: block;
-  width: 100%;
+nav a:nth-child(1){}
+nav a:nth-child(2){}
+
+/* ######## section ####### */
+section {
+  border: 2px solid #000;
+  border-bottom: 0;
+  width: 1200px;
+  height: 400px;
+  display: inline-block;
+  /* overflow: hidden; */
   text-align: center;
-  padding: 7px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  outline: none;
+  margin-bottom: -15px;
+  display: flex;
+
 }
-.desc-content input[type=email]::placeholder {
-  color: #bbb;
-  transition: 0.5s;
+
+/* ######## article####### */
+article {
+  border: 3px solid rebeccapurple;
+  width: 400px;
+  height: 400px;
+  position: relative;
 }
-.desc-content input[type=email]:focus::placeholder {
-  visibility: hidden;
-  opacity: 0;
-}
-.desc-content button {
-  display: block;
-  width: 100%;
-  border: none;
-  background-color: crimson;
-  cursor: pointer;
-  padding: 7px;
-  outline: none;
-}
-.overlay {
-  opacity: 0;
-  transition: 0.5s;
+.img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  background-image: url('imges/slide-01.jpg');
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -100;
   
 }
-
-
-@media (max-width: 768px) {
-  .modal-content {
-    flex-direction: column;
-    width: 100%;
-  }
-  .modal-content > div {
-    width: 350px;
-  }
-  .photo {
-    flex-basis: 250px;
-  }
+.detail {
+  
+}
+.detail h4 {
+  margin: 0;
+  text-align: left;
+}
+summary {
+  /* overflow: hidden; */
+}
+summary p {
+  /* vertical-align: middle; */
+  
+}
+summary p:nth-child(1) {
+  float: left;
+}
+summary p:nth-child(2) {
+  float: right;
 }

@@ -44,6 +44,22 @@
     position: static;
     transform: translate(0);
   }
+
+  /* change order */
+  .download .inner,
+  .create .inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .download .inner .desc,
+  .create .inner .desc {
+    order: 1;
+  }
+  .download .inner .preview,
+  .create .inner .preview {
+    order: 2;
+  }
+
   .inner > div {
     float: none;
     width: 100%;
