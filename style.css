@@ -27,105 +27,86 @@ font-family: 'Lato', sans-serif;
 * {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
+  font-weight: normal;
 }
 body {
   margin: 0;
-  line-height: 1.6em;
   font-size: 26px;
-  padding: 15px 55px;
-  
 }
 .container {
   width: 1200px;
   margin: auto;
 }
 
-/* ######### header ######## */
+/* ############### header ############## */
 header {
+  margin-top: 80px;
   overflow: hidden;
 }
+.logo {
+  display: block;
+}
 .logo h1 {
-  font-size: 48px;
+  font-size: 80px;
   text-transform: uppercase;
   float: left;
 }
-
+.logo h1 span {
+  font-size: 36px;
+}
 /* nav */
 nav {
   float: right;
 }
 nav a {
-  display: block;
   color: #000;
   text-decoration: none;
   text-align: right;
 }
+nav a img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin: 20px;
+}
 
-/* ######## section ####### */
+/* ################ section ############## */
 section {
-  /* border: 2px solid #000; */
-  border-bottom: 0;
   width: 1200px;
-  height: 400px;
-  /* display: inline-block; */
   text-align: center;
-  margin-bottom: 0px;
   display: flex;
 }
-section article:last-child {
-  border: none;
-}
 
-/* ######## article####### */
+/* ################ article############### */
 article {
-  /* border-right: 2px solid #000; */
   width: 400px;
-  height: 400px;
+  height: 350px;
   position: relative;
 }
-article:hover {
-  
-}
-img {
+.img a img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* z-index: -100; */
   width: 350px;
-  height: 350px;
-  background: url('imges/slide-01.jpg') no-repeat center center/100% 100%;
   border-radius: 30px;
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.205);
 }
 .img {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  height: 400px;
-  background: url('imges/slide-01.jpg') no-repeat center center/100% 100%; */
-  /* background-image: 
-  background-size: 400px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; */
-  /* z-index: -100; */
   transition: 0.5s;
   cursor: pointer;
 }
-.img:hover {
-  filter: opacity(10%);
-  
+.img:before {
+
 }
-img {
-  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.205);
+.img:hover {
+  opacity: 0.1;
+
+  
 }
 .desc {
   padding: 60px;
   text-align: left;
-  overflow: hidden;
-  /* position: relative; */
-}
-.desc h4 {}
-.desc p {
+  /* overflow: hidden; */
 }
