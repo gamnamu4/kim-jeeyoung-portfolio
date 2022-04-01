@@ -2,32 +2,20 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
 font-family: 'Noto Sans KR', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-font-family: 'Raleway', sans-serif;
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
-font-family: 'Montserrat', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 font-family: 'Roboto', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
-font-family: 'Source Sans Pro', sans-serif;
-/* Web Fonts : Lato */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
-font-family: 'Lato', sans-serif;
-/* Noonnu Korean Fonts */
-@font-face {
-  font-family: 'GmarketSansLight';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 /* Fontawesome 4.7 */
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 /* XEION CDN */
 @import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 
+:root {
+  --gray: rgb(46, 46, 46);
+  --lightgray: #ccc;
+}
+
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
   box-sizing: border-box;
-  font-weight: normal;
 }
 body {
   margin: 0;
@@ -38,6 +26,26 @@ body {
   margin: auto;
 }
 
+/* ############### loding ############## */
+.loading {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  opacity: 0.8;
+  background: white;
+  z-index: 99;
+  text-align: center;
+}
+.loading > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+}
+
 /* ############### header ############## */
 header {
   margin-top: 80px;
@@ -45,11 +53,27 @@ header {
 }
 .logo {
   display: block;
+  position: relative;
 }
 .logo h1 {
+  color: var(--gray);
   font-size: 80px;
   text-transform: uppercase;
   float: left;
+}
+.logo:before {
+  content: '';
+  position: absolute;
+  background-color: rgb(46, 46, 46);
+  height: 10px;
+  width: 0px;
+  top: 160px;
+  transition: 0.5s;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.logo:hover:before {
+  width: 100%;
 }
 .logo h1 span {
   font-size: 36px;
@@ -59,15 +83,17 @@ nav {
   float: right;
 }
 nav a {
-  color: #000;
   text-decoration: none;
-  text-align: right;
 }
 nav a img {
   width: 100px;
   height: 100px;
   border-radius: 10px;
   margin: 20px;
+  transition: 0.5s;
+}
+nav a:hover img {
+  transform: rotateY(360deg);
 }
 
 /* ################ section ############## */
@@ -77,7 +103,7 @@ section {
   display: flex;
 }
 
-/* ################ article############### */
+/* ################ article ############### */
 article {
   width: 400px;
   height: 350px;
@@ -88,7 +114,6 @@ article {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* z-index: -100; */
   width: 350px;
   border-radius: 30px;
   box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.205);
@@ -103,5 +128,13 @@ article {
 .desc {
   padding: 60px;
   text-align: left;
-  /* overflow: hidden; */
+}
+
+/* ################ footer ############### */
+footer {
+  text-align: center;
+  color: var(--lightgray);
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
 }
