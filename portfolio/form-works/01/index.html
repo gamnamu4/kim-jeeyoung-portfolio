@@ -4,36 +4,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>네이버 반응형 회원가입 폼</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Custom -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="custom.js">
 </head>
 <body>
   
   <div class="container">
     <div class="member">
-      <img src="" class="logo">
+      <img src="img/logo-naver.png " class="logo">
       <div class="field">
-        <b>...</b>
+        <b>아이디</b>
         <span>@naver.com</span>
         <input type="text">
       </div>
       <div class="field">
-        <b>...</b>
+        <b>비밀번호</b>
         <input type="password">
       </div>
       <div class="field">
-        <b>...</b>
+        <b>비밀번호 재확인</b>
         <input type="password">
       </div>
       <div class="field">
-        <b>...</b>
+        <b>이름</b>
         <input type="text">
       </div>
       <div class="field birth">
-        <b>...</b>
-        <input type="text">
-        <select name="" id=""></select>
+        <b>생년월일</b>
+        <div>
+          <input type="number" placeholder="년(4자)">
+          <select>
+            <option value="">월</option>
+          </select>
+          <input type="number" placeholder="일">
+        </div>
       </div>
-      
+      <div class="field gender">
+        <b>성별</b>
+        <div>
+          <label>
+            <input type="radio" name="gender"><em>남자</em>
+          </label>
+          <label>
+            <input type="radio" name="gender"><em>여자</em>
+          </label>
+          <label>
+            <input type="radio" name="gender"><em>선택안함</em>
+          </label>
+        </div>
+        <div class="field">
+          <b>본인 확인 이메일 <small>(선택)</small></b>
+          <input type="email" placeholder="선택입력">
+        </div>
+      </div>
+      <div class="field tel-number">
+        <select>
+          <option value="">대한민국 +82</option>
+        </select>
+        <div>
+          <input type="tel" placeholder="전화번호 입력">
+          <input type="button" value="인증번호 받기">
+        </div>
+        <input type="number" placeholder="인증번호 입력하세요">
+      </div>
+      <input type="submit" value="가입하기">
+      <div class="member-footer">
+        <div>
+          <a href="#none">이용약관</a>
+          <a href="#none">개인정보처리방침</a>
+          <a href="#none">책임의 한계와 법적고지</a>
+          <a href="#none">회원정보 고객센터</a>
+        </div>
+        <span>copyright <a href="#none">NAVER Corp.</a></span>
+
+        <!-- 
+          ■ Reference URL
+
+FontAwesome 4.7 CheatSheet
+https://fontawesome.bootstrapcheatsheets.com/
+
+FontAwesome 4.7 Official Website
+https://fontawesome.com/v4.7.0/icons/
+
+XEICON Ver2.3.3
+https://xpressengine.github.io/XEIcon/
+
+Web Gradients
+https://webgradients.com/
+
+W3 Schools Color Picker
+https://www.w3schools.com/colors/colors_picker.asp
+
+Flat UI colors
+https://flatuicolors.com/
+
+Social Colors
+https://www.materialui.co/socialcolors
+
+눈누 한글 폰트
+https://noonnu.cc/
+         -->
+      </div>
     </div>
   </div>
 
