@@ -47,7 +47,6 @@ a {
 /* reset CSS */
 input, select {
   cursor: pointer;
-
 }
 
 /* member sign in */
@@ -90,6 +89,7 @@ input, select {
 .field.tel-number div {
   display: flex;
   gap: 10px;
+  margin: 5px 0;
 }
 .field.tel-number div input:nth-child(1) {
   flex: 2;
@@ -97,8 +97,73 @@ input, select {
 .field.tel-number div input:nth-child(2) {
   flex: 1;
 }
-.field.gender  div {
+.field.gender div {
   border: 1px solid #dadada;
   background-color: #fff;
   padding: 15px 5px;
+}
+
+.placehold-text {
+  display: block;
+  position: relative;
+}
+.placehold-text:before {
+  content: '@naver.com';
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  pointer-events: none;
+}
+
+.userpw {
+  background: #fff url(img/icon-01.png) no-repeat center right 15px;
+  background-size: 20px;
+}
+
+.member-footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.member-footer div a:nth-child(2) {
+  font-weight: 500;
+}
+.member-footer a:hover {
+  text-decoration: underline;
+  color: #2DB400;
+}
+.member-footer div a {
+  /* margin-right: 10px;
+  border-right: 1px solid #bbb;
+  padding-right: 10px; */
+}
+.member-footer div a:after {
+  content: '|';
+  font-size: 10px;
+  color: #bbb;
+  margin-right: 5px;
+  padding-left: 7px;
+  transform: translateY(-2px);
+  display: inline-block;
+}
+.member-footer div a:last-child:after {
+  display: none;
+}
+
+/* custom select  & number */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff url(images/icon-select.png) no-repeat center right 20px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type=number] {
+  -moz-appearance: textfield;
 }
