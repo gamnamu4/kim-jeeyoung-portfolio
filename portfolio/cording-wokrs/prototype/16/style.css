@@ -40,6 +40,9 @@ font-family: 'Playfair Display', serif;
 /* XEION CDN */
 @import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
@@ -57,7 +60,7 @@ body {
   top: 20px;
   left: 20px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 11;
 }
 .toggle i {
   width: 40px;
@@ -81,7 +84,7 @@ body {
 /* overlay */
 .overlay {
   position: fixed;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.938);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -89,9 +92,26 @@ body {
   left: 20px;
   transition: 0.5s;
   opacity: 0;
+  z-index: 10;
 }
 .overlay.active {
   transform: scale(130);
+  opacity: 1;
+}
+
+/* common CSS */
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+section .inner {
+  width: 1550px;
+  text-align: center;
 }
 
 /* section : welcome */
@@ -105,9 +125,65 @@ section.welcome img {
   object-fit: cover;
 }
 
+.heading {}
+.heading h1 {
+  font-size: 3em;
+  position: relative;
+  padding-bottom: 45px;
+}
+.heading h1:before {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 4px;
+  background-color: crimson;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.heading p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
 .gnb {
-  display: none;
+  /* display: none; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+}
+.gnb.active {
+  opacity: 1;
+  pointer-events: all;
 }
 .gnb a {
-
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5em;
+  line-height: 1.6em;
+  position: relative;
+  padding-right: 20px;
+}
+.gnb a:after {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 0;
+  background-color: yellowgreen;
+  left: 0;
+  bottom: 7px;
+  z-index: -1;
+  transition: 0.5s;
+}
+.gnb a:hover:after {
+  width: 100%;
 }

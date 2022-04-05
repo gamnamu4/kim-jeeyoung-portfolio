@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+  /* common CSS */
+  section:not(.welcome) {
+    height: auto;
+    padding: 40px 20px;
+  }
+  section .inner {
+    width: 100%;
+  }
+  .heading h1 {
+    font-size: 2em;
+    line-height: 1.3em;
+  }
+
+  /* gnb */
+  .gnb {
+    text-align: center;
+    width: 100%;
+  }
+  .gnb a {
+    font-size: 2.2em;
+  }
+}
