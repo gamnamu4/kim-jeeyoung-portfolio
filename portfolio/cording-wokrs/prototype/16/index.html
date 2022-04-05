@@ -5,11 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>풀스크린 네비게이션 반응형 포트폴리오 with jquery
   </title>
+  <!-- jQuery CDN 3.5.1 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- jQuery UI CDN 1.12.1 -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="custom.js">
 </head>
 <body>
   
+  <div class="toggle">
+    <i class="xi-plus-thin"></i>
+  </div>
+  <div class="overlay active"></div>
+  <ul class="gnb">
+    <li><a href="#none">Home</a></li>
+    <li><a href="#none">About</a></li>
+    <li><a href="#none">Graphic Portfolio</a></li>
+    <li><a href="#none">Web Portfolio</a></li>
+    <li><a href="#none">Contact</a></li>
+    <li><a href="#none">Epilogue</a></li>
+  </ul>
+  <div class="container">
+    <section class="welcome">
+      <img src="img/bg-welcome.jpg">
+    </section>
+  </div>
 
+  <script>
+    $('.toggle').click(function(){
+      $('.toggle, .overlay').toggleClass('active')
+    })
+  </script>
 
 </body>
 </html>
