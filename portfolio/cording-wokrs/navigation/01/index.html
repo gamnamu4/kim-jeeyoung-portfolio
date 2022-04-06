@@ -61,7 +61,7 @@
               </div>
             </li>
             <li>
-              <a href="#none">Event <em>13</em></a>
+              <a href="#none">Event <em class="badge">13</em></a>
               <div class="dropdown">
                 <a href="#none">Event in progress</a>
                 <a href="#none">End event</a>
@@ -86,6 +86,50 @@
               </div>
             </li>
           </ul>
+          <div class="sitmap-outer">
+            <div class="sitemap">
+              <div>
+                <b>Guided Lessons</b>
+                <a href="#none">Worksheets</a>
+                <a href="#none">Games</a>
+                <a href="#none">Workbooks</a>
+              </div>
+              <div>
+                <b>Teaching Tools</b>
+                <a href="#none">Progress Tracker</a>
+                <a href="#none">Classroom Mode</a>
+                <a href="#none">Skills Progression</a>
+              </div>
+              <div>
+                <b>Learning Library</b>
+                <a href="#none">Worksheets</a>
+                <a href="#none">Games</a>
+                <a href="#none">Workbooks</a>
+                <a href="#none">Activities</a>
+                <a href="#none">Songs</a>
+              </div>
+              <div>
+                <b>Teaching Tools</b>
+                <a href="#none">Lesson Plans</a>
+                <a href="#none">Worksheet Generator</a>
+                <a href="#none">Common Core Resources</a>
+                <a href="#none">More Teaching Tools</a>
+              </div>
+              <div>
+                <b>Schools</b>
+                <a href="#none">Get a Quote</a>
+                <a href="#none">Buy School License</a>
+              </div>
+              <div>
+                <b>Support</b>
+                <a href="#none">Pricing</a>
+                <a href="#none">Give Gift</a>
+                <a href="#none">Redeem Gift</a>
+                <a href="#none">FAQs</a>
+                <a href="#none">Terms of Service</a>
+              </div>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
@@ -97,6 +141,10 @@
   <script>
     $('.close-banner').click(function(){
       $('.banner-outer').slideUp()
+    })
+    $('.trigger').click(function(){
+      $(this).toggleClass('active')
+      $('.gnb li:last-child').toggleClass('active')
     })
   </script>
 
