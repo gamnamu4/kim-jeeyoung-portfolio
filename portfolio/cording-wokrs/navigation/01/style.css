@@ -27,3 +27,57 @@ section {}
 section img {
   width: 100%;
 }
+
+/* ################ Header ################# */
+
+/* Banner */
+.banner-outer {
+  position: relative;
+  background: linear-gradient(to right, #00202B 50%, #fff 50%);
+}
+.banner {
+  width: 1450px;
+  margin: auto;
+}
+.banner img {
+  display: block;
+}
+.close-banner {
+  position: absolute;
+  right: 10px;
+  font-size: 26px;
+  color: #aaa;
+  cursor: pointer;
+  top: 5px;
+}
+
+/* Lnb */
+.lnb-outer {
+  background-color: #e2edf8;
+}
+.lnb {
+  width: 1450px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.logo {}
+.lnb-navi {}
+.lnb-navi a {}
+.lnb-navi a:after {
+  content: '|';
+  font-size: 12px;
+  color: #bbb;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.lnb-navi a:hover {
+  color: dodgerblue;
+}
+
+/* Gnb */
+
+/* ################ Section ################ */

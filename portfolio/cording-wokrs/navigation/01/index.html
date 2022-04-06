@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>헤더 드롭다운 애니메이션</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +14,7 @@
     <header>
       <div class="banner-outer">
         <div class="banner">
-          <span><i class="xi-close-thin"></i></span>
+          <span class="close-banner"><i class="xi-close-thin"></i></span>
           <img src="img/banner.png">
         </div>
       </div>
@@ -91,6 +93,12 @@
       <img src="img/section-bg.png">
     </section>
   </div>
+
+  <script>
+    $('.close-banner').click(function(){
+      $('.banner-outer').slideUp()
+    })
+  </script>
 
 </body>
 </html>
