@@ -5,7 +5,6 @@
 font-family: 'Montserrat', sans-serif;
 
 * {
-  
   font-family: 'Montserrat', sans-serif;
   outline: none;
 }
@@ -167,7 +166,7 @@ nav {
   left: 50%;
   transform: translate(-90%, -60%);
   cursor: pointer;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .trigger span {
   position: absolute;
@@ -201,17 +200,33 @@ nav {
 }
 
 /* Sitemap */
-.sitmap-outer {
+.sitemap-outer {
   background-color: #fff;
   position: absolute;
-  top: 0;
   top: 100%;
   width: 100%;
+  padding: 30px 15px;
+  display: none;
+  box-sizing: border-box;
 }
-.sitemap {}
-.sitemap div {}
+.sitemap {
+  display: flex;
+}
+.sitemap div {
+  flex: 1;
+  font-size: 14px;
+  line-height: 2em;
+}
 .sitemap div b {}
-.sitemap div b a {}
+.sitemap div a {
+  display: block;
+}
+.sitemap div a:before {
+  content: '- ';
+}
+.sitemap div a:hover {
+  text-decoration: underline;
+}
 
 /* ################ Section ################ */
 section {}
