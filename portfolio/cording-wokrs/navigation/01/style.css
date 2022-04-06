@@ -1,0 +1,29 @@
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+font-family: 'Montserrat', sans-serif;
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+
+body {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Section */
+section {}
+section img {
+  width: 100%;
+}
