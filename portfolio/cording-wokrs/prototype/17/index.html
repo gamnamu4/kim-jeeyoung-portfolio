@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <button class="btn-open">뉴스레터 구독하기</button>
   
   <div class="modal">
     <div class="modal-content">
@@ -30,6 +32,15 @@
     </div>
   </div>
   <div class="overlay"></div>
-  
+
+  <script>
+    $('.btn-open').click(function(){
+      $('.modal, .overlay').toggleClass('active')
+    })
+    $('.btn-close, .overlay').click(function(){
+      $('.modal, .overlay').removeClass('active')
+    })
+  </script>
+
 </body>
 </html>
