@@ -1,0 +1,70 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* Default CSS */
+* {
+  font-family: 'Noto Sans KR', 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  line-height: 1.6em;
+  /* background-color: #fff; */
+  color: #222;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+/* Reset CSS */
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+}
+
+/* Common CSS */
+.headline-share {
+  text-align: center;
+}
+.headline-share h1 {
+  font-size: 56px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 30px;
+}
+.headline-share h1:before {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 80px;
+  background: linear-gradient(to right, #1f8de6, #5ed6fe);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.font-noto {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+}
+
+/* Section : portfolio */
+section.portfolio {
+  height: 100vh;
+  display: grid; 
+  justify-items: center;
+  align-content: center;
+  background: url(img/background.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+.items {
+  width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.item {
+  border: 1px solid #000;
+}
