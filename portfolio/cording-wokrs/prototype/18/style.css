@@ -33,6 +33,7 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 500;
   position: relative;
   padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 .headline-share h1:before {
   content: '';
@@ -66,5 +67,63 @@ section.portfolio {
   grid-gap: 30px;
 }
 .item {
-  border: 1px solid #000;
+
+}
+.item.thum .photo {
+  /* border: 1px solid #000; */
+  height: 400px;
+  border-radius: 15px;
+  box-shadow: 0 15px 45px -10px rgba(0, 0, 0, 0.137);
+  background-image: url(img/web-portfolio-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  transition: 2s;
+}
+.item.thum:hover .photo {
+  background-position: bottom;
+}
+.item.thum:nth-of-type(2) .photo {
+  background-image: url(img/web-portfolio-02.jpg);
+}
+.item.thum:nth-of-type(3) .photo {
+  background-image: url(img/web-portfolio-03.jpg);
+}
+.item.thum span {
+  display: block;
+  text-align: center;
+}
+.btn-view {
+  color: #fff;
+  background-color: crimson;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+.btn-view.pc {
+  background-color: crimson;
+}
+.btn-view.mobile {
+  background-color: royalblue;
+}
+
+aside.item {}
+aside.item b {
+  font-weight: normal;
+  color: crimson;
+  font-size: 14px;
+}
+aside.item h2 {
+  font-size: 26px;
+  font-weight: bold;
+  /* margin-top: 15px; */
+}
+aside.item p {}
+.font-noto {
+  margin-top: 20px;
+}
+.font-noto span {
+  display: list-item;
+  letter-spacing: disc;
+  margin-left: 20px;
 }
