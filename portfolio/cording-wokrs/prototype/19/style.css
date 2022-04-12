@@ -51,13 +51,15 @@ footer {
 .footer-inner {
   width: 1280px;
   margin: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
+  height: 200px;
 }
 .copyright {
   float: left;
 }
 .family {
   float: right;
+  padding-top: 40px;
 }
 .policy {}
 .policy a {}
@@ -77,4 +79,44 @@ footer em {
 }
 .info p {
   margin: 5px 0;
+}
+
+/* Family site */
+.dropdown {
+  width: 200px;
+  color: #303135;
+  border: 1px solid #555;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+}
+.title {
+  color: #fff;
+}
+.title:after {
+  content: '';
+}
+.sub-navi {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+  display: none;
+}
+.sub-navi li {}
+.sub-navi li a {
+  color: #fff;
+  display: block;
+  padding: 5px;
+  background-color: #555;
+  border-bottom: 1px solid #aaa;
+}
+.sub-navi li a:last-child {
+  bottom: none;
+}
+.sub-navi li a:hover {
+  background-color: #333;
 }
