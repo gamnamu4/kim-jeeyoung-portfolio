@@ -1,0 +1,80 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+font-family: 'Noto Sans KR', sans-serif;
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6em;
+  background-color: #fff;
+  color: #222;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  height: 100px;
+  background-color: skyblue;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  line-height: 100px;
+}
+section {
+  height: 500px;
+  background-color: #ddd;
+  font-size: 2em;
+  line-height: 500px;
+  text-align: center;
+}
+section:nth-of-type(odd) {
+  background-color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: #37393d;
+  color: #999;
+  padding: 30px 40px;
+}
+.footer-inner {
+  width: 1280px;
+  margin: auto;
+  overflow: hidden;
+}
+.copyright {
+  float: left;
+}
+.family {
+  float: right;
+}
+.policy {}
+.policy a {}
+.policy a:first-child {
+  color: yellowgreen;
+}
+.policy a:hover {
+  text-decoration: underline;
+  font-weight: 500;
+}
+footer em {
+  font-style: normal;
+  color: #555;
+  margin: 7px;
+  display: inline-block;
+  transform: translateY(-2px);
+}
+.info p {
+  margin: 5px 0;
+}
