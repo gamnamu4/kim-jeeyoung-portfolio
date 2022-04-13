@@ -92,9 +92,16 @@ footer em {
 }
 .title {
   color: #fff;
+  position: relative;
 }
 .title:after {
-  content: '';
+  content: '\f107';
+  font-family: fontawesome;
+  position: absolute;
+  right: 5px;
+}
+.title.active.after {
+  transform: rotate(180deg);
 }
 .sub-navi {
   position: absolute;
