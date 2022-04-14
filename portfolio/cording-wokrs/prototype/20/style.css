@@ -54,10 +54,21 @@ section h1 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.116);
   overflow: hidden;
 }
-.icon {}
-.icon i {}
-.icon-frame {}
-.icon-frame input[type=text] {}
+
+
+.icon {
+
+}
+.icon i {
+
+}
+.icon-frame {
+
+}
+.icon-frame input[type=text] {
+  
+}
+
 .clear {
   display: none;
 }
