@@ -56,15 +56,10 @@ section h1 {
 }
 
 
-.icon {
-}
-.icon i {
-}
-.icon-frame {
-}
-.icon-frame input[type=text] {
-}
-
+.icon {}
+.icon i {}
+.icon-frame {}
+.icon-frame input[type=text] {}
 .clear {
   display: none;
 }
