@@ -1,0 +1,66 @@
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  background-color: #222;
+  color: gainsboro;
+  left: 1.6em;
+}
+a {
+  text-decoration: none;
+  color: gainsboro;
+}
+
+/* Nexfilx accordion */
+.faq .inner {
+  width: 700px;
+  margin: auto;
+}
+.faq .inner h1 {
+  fallback: ;
+  font-weight: 500;
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+.faq-title {
+  background-color: #303030;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+.faq-title:hover {
+  background-color: #34495e;
+}
+.faq-title.active {
+  background-color: #34495e;
+}
+.faq-title i {
+  float: right;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.faq-title.active i {
+  transform: rotate(45deg);
+}
+.faq-content {
+  background-color: #303030;
+  padding: 10px;
+  margin-bottom: 5px;
+  display: none;
+}
+.netflix-main {
+  background: url(img/netflix-main.jpg);
+  width: inherit;
+  height: 300px;
+  padding: 50px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
