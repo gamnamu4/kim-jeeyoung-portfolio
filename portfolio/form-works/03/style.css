@@ -9,9 +9,10 @@ body {
 }
 
 .container {
+  /* border: 1px solid #000; */
   width: 400px;
   margin: auto;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   /* text-align: center; */
 }
 .logo {
@@ -29,9 +30,12 @@ body {
   margin-bottom: 5px;
 }
 .input input {
+  /* border: 1px solid #000; */
   width: 100%;
   height: 40px;
   outline: none;
+  box-shadow: none;
+  box-sizing: border-box;
 }
 .input input:focus {
   border: 1px solid yellowgreen;
@@ -55,15 +59,22 @@ body {
 .radio {
   /* border: 1px solid #000; */
 }
+.radio div {
+  /* border: 1px solid #000; */
+  width: 100%;
+  padding: 10px 5px; 
+  background-color: #fff;
+  box-sizing: border-box;
+}
 .radio label {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 .radio input {
   display: none;
 }
 .radio em {
   cursor: pointer;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   display: inline-block;
   width: 17px;
   height: 17px;
@@ -81,11 +92,12 @@ body {
 }
 .tel-inner {
   display: flex;
+  gap: 10px;
 }
 .input-tel input {
   flex: 2;
 }
-.input-tel button {
+.input-tel input[type=button] {
   background-color: yellowgreen;
   border: none;
   outline: none;
