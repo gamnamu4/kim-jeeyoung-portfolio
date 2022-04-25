@@ -7,6 +7,11 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   box-sizing: border-box;
 }
+input {
+  font-size: 16px;
+  padding-left: 10px;
+  border: none;
+}
 
 .container {
   /* border: 1px solid #000; */
@@ -42,7 +47,7 @@ body {
 }
 .input-id span {
   position: absolute;
-  bottom: 14px;
+  bottom: 12px;
   right: 10px;
   pointer-events: none;
 }
@@ -53,8 +58,8 @@ body {
 .pw {
   width: 20px;
   position: absolute;
-  right: 10px;
-  bottom: 14px;
+  right: 13px;
+  bottom: 10px;
 }
 .radio {
   /* border: 1px solid #000; */
@@ -79,10 +84,10 @@ body {
   width: 17px;
   height: 17px;
   background: url(img/icon-radio.png);
-  background-position: left 0;
+  background-position: left;
 }
 .radio em:focus {
-  background-position: ;
+  background-position: right;
 }
 
 .input-tel {
