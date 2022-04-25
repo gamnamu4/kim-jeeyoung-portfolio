@@ -1,140 +1,43 @@
 /* Google Web Fonts CDN */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
 
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #eee;
   font-family: 'Noto Sans KR', sans-serif;
-  box-sizing: border-box;
-}
-input {
-  font-size: 16px;
-  padding-left: 15px;
-  border: none;
 }
 
-.container {
-  /* border: 1px solid #000; */
-  width: 400px;
-  margin: auto;
-  /* padding: 0 20px; */
-  /* text-align: center; */
-}
-.logo {
-  padding: 30px 0;
-  width: 200px;
-  display: block;
-  margin: auto;
-
-}
-.input {
-  position: relative;
-  margin-bottom: 20px;
-}
-.input p {
-  margin-bottom: 5px;
-}
-.input input {
-  /* border: 1px solid #000; */
-  width: 100%;
-  height: 40px;
-  outline: none;
-  box-shadow: none;
-  box-sizing: border-box;
-}
-.input input:focus {
-  border: 1px solid yellowgreen;
-}
-.input-id span {
-  position: absolute;
-  bottom: 12px;
-  right: 10px;
-  pointer-events: none;
-  color: rgb(89, 89, 89);
-}
-
-.input-pw {
-  position: relative;
-}
-.pw {
-  width: 20px;
-  position: absolute;
-  right: 13px;
-  bottom: 9px;
-}
-.radio {
-}
-.radio div {
-  width: 100%;
-  padding: 10px 5px; 
-  background-color: #fff;
-  box-sizing: border-box;
-  
-}
-.radio label {
-  /* border: 1px solid #000; */
-  margin: 0 2px;
-  
-}
-.radio label:first-child {
-  margin-left: 8px;
-}
-.radio input[name=gender] {
-  display: none;
-}
-.radio em {
-  cursor: pointer;
-  /* border: 1px solid #000; */
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  background: url(img/icon-radio.png);
-  background-position: left center;
-}
-input[type="radio"]:checked + em {
-  background-position: right;
-}
-
-.input-tel {
-}
-
-.input-tel p {
-}
-.tel-inner {
-  display: flex;
-  gap: 10px;
-}
-.input-tel input {
-  flex: 2;
-}
-.input-tel input[type=button] {
-  background-color: yellowgreen;
-  border: none;
-  outline: none;
-  margin-left: -20px;
-  flex: 1;
-}
-
-footer {
-}
-.footer-inner {
-  text-align: center;
-}
-.footer-inner a {
+a {
   text-decoration: none;
-  color: #999;
-  position: relative;
-  margin: 0 3px;
+  color: #222;
 }
-.footer-inner a:after {
-  content: '|';
-  /* border: 1px solid red; */
-  /* display: inline-block; */
-  position: absolute;
-  font-size: 13px;
-  margin-left: 2.9px;
-  bottom: 3px;
+
+/* header */
+header {}
+.toggle {}
+.toggle a {}
+
+.overlay {}
+.background {
+  /* width: 1200px;
+  height: 500px; */
+  background: url(img/bg-welcome.jpg) no-repeat cover center center;
 }
-.footer-inner a:last-child:after {
-  display: none;
+
+section {
+  border: 1px solid #000;
+  width: 800px;
+  margin: auto;
+  text-align: center;
+
 }
+
+section.welcome {
+
+}
+.section-inner {}
+.section-inner h2 {}
+.section-inner p {}
