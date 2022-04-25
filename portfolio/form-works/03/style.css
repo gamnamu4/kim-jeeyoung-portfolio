@@ -63,18 +63,18 @@ input {
   bottom: 9px;
 }
 .radio {
-  /* border: 1px solid #000; */
 }
 .radio div {
-  /* border: 1px solid #000; */
   width: 100%;
   padding: 10px 5px; 
   background-color: #fff;
   box-sizing: border-box;
+  
 }
 .radio label {
-  border: 1px solid #000;
-  vertical-align: middle;
+  /* border: 1px solid #000; */
+  margin: 0 2px;
+  
 }
 .radio label:first-child {
   margin-left: 8px;
@@ -84,12 +84,12 @@ input {
 }
 .radio em {
   cursor: pointer;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   display: inline-block;
   width: 17px;
   height: 17px;
   background: url(img/icon-radio.png);
-  background-position: left;
+  background-position: left center;
 }
 input[type="radio"]:checked + em {
   background-position: right;
@@ -122,13 +122,19 @@ footer {
 }
 .footer-inner a {
   text-decoration: none;
-  color: #222;
-
+  color: #999;
+  position: relative;
+  margin: 0 3px;
 }
 .footer-inner a:after {
-  content: ' |';
+  content: '|';
+  /* border: 1px solid red; */
+  /* display: inline-block; */
+  position: absolute;
+  font-size: 13px;
+  margin-left: 2.9px;
+  bottom: 3px;
 }
 .footer-inner a:last-child:after {
-  content: '';
   display: none;
 }
