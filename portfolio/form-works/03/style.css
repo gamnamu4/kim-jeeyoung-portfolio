@@ -9,7 +9,7 @@ body {
 }
 input {
   font-size: 16px;
-  padding-left: 10px;
+  padding-left: 15px;
   border: none;
 }
 
@@ -50,6 +50,7 @@ input {
   bottom: 12px;
   right: 10px;
   pointer-events: none;
+  color: rgb(89, 89, 89);
 }
 
 .input-pw {
@@ -59,7 +60,7 @@ input {
   width: 20px;
   position: absolute;
   right: 13px;
-  bottom: 10px;
+  bottom: 9px;
 }
 .radio {
   /* border: 1px solid #000; */
@@ -72,21 +73,25 @@ input {
   box-sizing: border-box;
 }
 .radio label {
-  /* border: 1px solid #000; */
+  border: 1px solid #000;
+  vertical-align: middle;
 }
-.radio input {
+.radio label:first-child {
+  margin-left: 8px;
+}
+.radio input[name=gender] {
   display: none;
 }
 .radio em {
   cursor: pointer;
-  /* border: 1px solid #000; */
+  border: 1px solid #000;
   display: inline-block;
   width: 17px;
   height: 17px;
   background: url(img/icon-radio.png);
   background-position: left;
 }
-.radio em:focus {
+input[type="radio"]:checked + em {
   background-position: right;
 }
 
@@ -106,7 +111,7 @@ input {
   background-color: yellowgreen;
   border: none;
   outline: none;
-  margin-left: -2px;
+  margin-left: -20px;
   flex: 1;
 }
 
@@ -122,4 +127,8 @@ footer {
 }
 .footer-inner a:after {
   content: ' |';
+}
+.footer-inner a:last-child:after {
+  content: '';
+  display: none;
 }
