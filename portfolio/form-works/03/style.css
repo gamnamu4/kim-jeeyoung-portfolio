@@ -1,3 +1,12 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* Web Fonts : Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+/* XEICON CDN  */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
 /* Google Web Fonts CDN */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
 
@@ -7,7 +16,7 @@
 
 body {
   background-color: #eee;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Noto Sans KR', 'Montserrat', sans-serif;
 }
 
 a {
@@ -22,17 +31,14 @@ header {}
 
 .overlay {}
 .background {
-  /* width: 1200px;
-  height: 500px; */
-  background: url(img/bg-welcome.jpg) no-repeat cover center center;
 }
 
 section {
   border: 1px solid #000;
-  width: 800px;
+  width: 1150px;
   margin: auto;
   text-align: center;
-
+  padding: 50px;
 }
 
 section.welcome {
