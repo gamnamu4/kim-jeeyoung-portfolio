@@ -26,19 +26,47 @@ a {
 
 /* header */
 header {
-  position: relative;
+  
 }
 .gnb {
-  /* display: none; */
-  position: absolute;
+  position: fixed;
+  z-index: 10;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.gnb.active {
+  opacity: 1;
+  pointer-events: all;
 }
 .gnb li {
   list-style: none;
 }
-.gnb a {}
+.gnb a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Playfair Display', 'serif';
+  font-size: 3.5em;
+  line-height: 1.6em;
+  position: relative;
+}
+.gnb a:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 20px;
+  width: 0;
+  background-color: yellowgreen;
+  left: 0;
+  bottom: 3px;
+  transition: 0.3s;
+}
+.gnb a:hover:after {
+  width: 105%;
+}
 
 .toggle {
   position: fixed;
@@ -56,12 +84,13 @@ header {
   border-radius: 50%;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.453);
+  transition: 0.5s;
 }
 /* toggle trigger */
 .toggle.active i {
   background-color: yellowgreen;
   transform: rotate(315deg);
-  transition: 0.5s;
+  
 }
 
 /* overlay */
@@ -74,6 +103,7 @@ header {
   top: 20px;
   left: 20px;
   transition: 0.5s;
+  overflow: 0;
 }
 .overlay.active {
   transform: scale(130);

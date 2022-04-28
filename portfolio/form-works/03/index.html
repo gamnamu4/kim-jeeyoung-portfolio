@@ -11,18 +11,16 @@
 <body>
   
   <div class="container">
-    <header>
-      <ul class="gnb">
-        <li><a href="#none">welcome</a></li>
-        <li><a href="#none">home</a></li>
-        <li><a href="#none">portfolio</a></li>
-        <li><a href="#none">contact</a></li>
-      </ul>
-    </header>
+    <ul class="gnb">
+      <li><a href="#none">welcome</a></li>
+      <li><a href="#none">home</a></li>
+      <li><a href="#none">portfolio</a></li>
+      <li><a href="#none">contact</a></li>
+    </ul>
     <div class="toggle">
       <i class="xi-close-thin"></i>
     </div>
-    <div class="overlay active"></div>
+    <div class="overlay"></div>
     <section class="background">
       <img src="img/bg-welcome.jpg" alt="">
     </section>
@@ -56,6 +54,7 @@
     $('.toggle').click(function(){
       $('.toggle').toggleClass('active')
       $('.overlay').toggleClass('active')
+      $('.gnb').toggleClass('active')
     })
   </script>
 
