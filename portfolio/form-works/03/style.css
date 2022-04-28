@@ -25,11 +25,19 @@ a {
 }
 
 /* header */
-header {}
-.gnb {
-  display: none;
+header {
+  position: relative;
 }
-.gnb li {}
+.gnb {
+  /* display: none; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gnb li {
+  list-style: none;
+}
 .gnb a {}
 
 .toggle {
