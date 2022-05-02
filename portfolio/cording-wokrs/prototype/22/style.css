@@ -34,6 +34,7 @@ a {
 .faq-inner h1 {
   text-align: center;
   margin-top: 0;
+  padding-top: 40px;
 }
 .accordion {
   
@@ -41,17 +42,21 @@ a {
 .accordion-item {
   background-color: #fff;
   border-radius: 25px;
-  padding: 15px;
+  padding: 15px 25px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.161);
   margin-bottom: 17px;
 }
 .accordion-item .title {
   font-weight: bold;
-  /* padding-bottom: 15px; */
+  cursor: pointer;
+}
+.accordion-item .title.active {
+  padding-bottom: 15px;
 }
 .accordion-item .content {
   border-top: 1px solid #000;
   font-size: 16px;
   padding-top: 15px;
   display: none;
+  cursor: pointer;
 }

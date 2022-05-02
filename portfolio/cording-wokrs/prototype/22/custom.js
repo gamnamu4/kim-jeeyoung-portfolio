@@ -1,5 +1,9 @@
 $(function(){
   $('.accordion-item .title').click(function(){
-    $('.accordion-item .content').stop().slideToggle()
+    $(this).next().stop().slideToggle(300)
+    $(this).toggleClass('active')
+  })
+  $('.accordion-item .content').click(function(){
+    $(this).stop().slideUp(300)
   })
 })
