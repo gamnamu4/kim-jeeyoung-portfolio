@@ -34,7 +34,7 @@ a {
 .faq-inner h1 {
   text-align: center;
   margin-top: 0;
-  padding-top: 40px;
+  padding: 40px 0 20px 0;
 }
 .accordion {
   
@@ -49,6 +49,16 @@ a {
 .accordion-item .title {
   font-weight: bold;
   cursor: pointer;
+}
+.accordion-item .title:after {
+  content: '\f107';
+  font-family: fontawesome;
+  float: right;
+  margin-top: 4px;
+  transition: 1s;
+}
+.accordion-item .title.active:after {
+  transform: rotateX(180deg);
 }
 .accordion-item .title.active {
   padding-bottom: 15px;
