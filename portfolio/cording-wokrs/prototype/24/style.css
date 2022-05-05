@@ -14,11 +14,3 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-div {
-  border: 20px dashed #000;
-  width: 200px;
-  height: 200px;
-  padding: 20px;
-  background-color: red;
-  display: none;
-}
