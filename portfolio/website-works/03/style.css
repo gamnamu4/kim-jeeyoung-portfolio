@@ -31,3 +31,21 @@ footer {
   height: 100px;
   background-color: skyblue;
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .content {
+    flex-direction: column;
+  }
+  aside:nth-child(1) {
+    order: 2
+  }
+  aside:last-child {
+    order: 3
+  }
+  .content div {
+    order: 1;
+  }
+}
