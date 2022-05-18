@@ -6,13 +6,34 @@ body {
 }
 section {
   width: 1200px;
+  display: flex;
 }
 section article {
-  border: 2px solid red
+  /* border: 2px solid red; */
+  flex: 1;
+  /* padding: 30px; */
 }
 .content1 {
-
+  background-color: yellow;
+  padding: 20px;
 }
-.content2 {}
-.sub1 {}
-.sub2 {}
+.content2 {
+  display: flex;
+  flex-direction: column;
+}
+.content2 div {
+  flex: 1;
+  padding: 20px;
+}
+.sub1 {
+  background-color: skyblue;
+}
+.sub2 {
+  background-color: pink;
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+}
