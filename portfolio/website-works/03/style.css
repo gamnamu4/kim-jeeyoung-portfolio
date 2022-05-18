@@ -1,39 +1,29 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.container {
+  
+}
+header {
+  background-color: yellow;
+  padding: 30px;
+}
+header h2 {
+  margin: 0;
+}
+.banner {
+  background-color: greenyellow;
+  padding: 30px;
 }
 section {
-  width: 1200px;
   display: flex;
+  height: 100%;
 }
-section article {
-  /* border: 2px solid red; */
-  flex: 1;
-  /* padding: 30px; */
-}
-.content1 {
-  background-color: yellow;
-  padding: 20px;
-}
-.content2 {
-  display: flex;
-  flex-direction: column;
-}
-.content2 div {
-  flex: 1;
-  padding: 20px;
-}
-.sub1 {
-  background-color: skyblue;
-}
-.sub2 {
+section article {}
+.navi {
   background-color: pink;
+}
+.content {
+  background-color: skyblue;
 }
 
 @media (max-width: 768px) {
-  section {
-    flex-direction: column;
-  }
+
 }
