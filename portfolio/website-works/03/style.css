@@ -1,37 +1,28 @@
 body {
-  height: 100vh;
+  background-color: #eee;
 }
-.container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+
+a {
+  text-decoration: none;
+  color: #222;
 }
+
 header {
-  background-color: yellow;
-  padding: 30px;
-}
-header h2 {
-  margin: 0;
-}
-.banner {
-  background-color: greenyellow;
-  padding: 30px;
-}
-section {
+  background-color: #fff;
   display: flex;
-  height: 100%;
+  padding: 20px;
 }
-section article {}
-.navi {
-  background-color: pink;
-  /* width: 300px; */
-  flex-basis: 300px;
-}
-.content {
-  background-color: skyblue;
+.logo {
   flex: 1;
+  border: 1px solid #000;
 }
-
-@media (max-width: 768px) {
-
+.gnb {
+  flex: 6;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-around;
+}
+.gnb a {}
+.search {
+  flex: 1;
 }
