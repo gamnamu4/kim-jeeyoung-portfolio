@@ -1,5 +1,10 @@
+body {
+  height: 100vh;
+}
 .container {
-  
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 header {
   background-color: yellow;
@@ -19,9 +24,12 @@ section {
 section article {}
 .navi {
   background-color: pink;
+  /* width: 300px; */
+  flex-basis: 300px;
 }
 .content {
   background-color: skyblue;
+  flex: 1;
 }
 
 @media (max-width: 768px) {
