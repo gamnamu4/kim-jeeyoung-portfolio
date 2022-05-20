@@ -7,22 +7,33 @@ a {
   color: #222;
 }
 
+.container {
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+}
 header {
-  background-color: #fff;
+  background-color: yellowgreen;
+  height: 50px;
+}
+section {
   display: flex;
-  padding: 20px;
+  height: 500px;
+  /* justify-content: space-between; */
 }
-.logo {
+article {
+  background-color: #ccc;
+  flex: 3;
+}
+aside {
+  background-color: grey;
   flex: 1;
-  border: 1px solid #000;
 }
-.gnb {
-  flex: 6;
-  border: 1px solid #000;
-  display: flex;
-  justify-content: space-around;
-}
-.gnb a {}
-.search {
+nav {
+  background-color: lightgrey;
   flex: 1;
+}
+footer {
+  background-color: yellowgreen;
+  height: 50px;
 }
