@@ -11,35 +11,9 @@ a {
   width: 1200px;
   margin: auto;
   text-align: center;
-  display: flex;
+  /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
 }
 
-nav {
-  flex: 1;
-  background-color: lightgrey;
-}
-main {
-  flex: 6;
-  background-color: lightblue;
-}
-header {
-  height: 100px;
-  background-color: lightcyan;
-}
-section {
-  display: flex;
-  height: 500px;
-}
-section article {
-  flex: 5;
-  background-color: #fff;
-}
-section aside {
-  flex: 2;
-}
-footer {
-  height: 100px;
-  background-color: lightpink;
-}
+header
