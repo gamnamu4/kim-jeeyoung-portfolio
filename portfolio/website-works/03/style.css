@@ -1,5 +1,5 @@
 body {
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 
 a {
@@ -11,29 +11,35 @@ a {
   width: 1200px;
   margin: auto;
   text-align: center;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+nav {
+  flex: 1;
+  background-color: lightgrey;
+}
+main {
+  flex: 6;
+  background-color: lightblue;
 }
 header {
-  background-color: yellowgreen;
-  height: 50px;
+  height: 100px;
+  background-color: lightcyan;
 }
 section {
   display: flex;
   height: 500px;
-  /* justify-content: space-between; */
 }
-article {
-  background-color: #ccc;
-  flex: 3;
+section article {
+  flex: 5;
+  background-color: #fff;
 }
-aside {
-  background-color: grey;
-  flex: 1;
-}
-nav {
-  background-color: lightgrey;
-  flex: 1;
+section aside {
+  flex: 2;
 }
 footer {
-  background-color: yellowgreen;
-  height: 50px;
+  height: 100px;
+  background-color: lightpink;
 }
