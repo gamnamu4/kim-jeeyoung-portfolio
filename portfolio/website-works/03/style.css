@@ -7,35 +7,3 @@ a {
   color: #222;
 }
 
-.container {
-  width: 1200px;
-  margin: auto;
-  text-align: center;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-}
-
-header {
-  height: 100px;
-  background-color: pink;
-}
-main {
-  display: flex;
-  height: calc(100vh - 200px);
-}
-nav {
-  flex: 1;
-  background-color: lightpink;
-}
-main article {
-  flex: 3;
-}
-main aside {
-  flex: 1;
-  background-color: lightgray;
-}
-footer {
-  height: 100px;
-  background-color: salmon;
-}
