@@ -1,5 +1,9 @@
 body {
   /* background-color: #eee; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 a {
@@ -7,3 +11,21 @@ a {
   color: #222;
 }
 
+.parent {
+  border: 1px solid red;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.child {
+  border: 1px solid #000;
+  height: 150px;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 15px;
+  display: flex;
+}
+.child div {
+  background-color: yellowgreen;
+  flex: 1;
+}
