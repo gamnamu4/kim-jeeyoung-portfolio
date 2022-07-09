@@ -17,6 +17,9 @@
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+  margin: 0;
 }
 .heading {
   font-family: 'GmarketSanslight';
@@ -32,18 +35,72 @@ body {
 .items-inner {
   width: 1350px;
   margin: auto;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 .items {
   display: flex;
-  /* gap: 10px; */
+  gap: 20px;
 }
 .item {
-  height: 400px;
-  border: 1px solid #000;
+  height: 450px;
   flex: 1;
+  /* margin-right: 10px; */
+}
+/* .item:last-child {
+  margin-right: 0;
+} */
+
+.photo {
+  position: relative;
+  height: 380px;
+}
+.photo a {}
+.photo a img {
+  width: 100%;
+  position: absolute;
+  transition: 0.5s;
+}
+.photo a img:first-child {
+  z-index: 1;
+}
+.photo a img:last-child {
+  z-index: ;
+}
+.photo:hover a img:first-child {
+  opacity: 0;
+}
+.detail {
+  position: relative;
+  margin-top: 10px;
+}
+.detail span {
+  display: block;
+}
+.detail .price {}
+.detail .price b {
+  color: crimson;
   margin-right: 10px;
 }
-.item:last-child {
-  margin-right: 0;
+.detail .name {
+  font-weight: 400;
+}
+.detail .count {
+  color: #777;
+}
+.detail .like {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 5px;
+  top: 5px;
+}
+.detail .like:before {
+  content: "\f08a";
+  font-family: fontawesome;
+  font-size: 18px;
+  color: #999;
+}
+.detail .like.active:before {
+  content: "\f004";
+  color: crimson;
 }
