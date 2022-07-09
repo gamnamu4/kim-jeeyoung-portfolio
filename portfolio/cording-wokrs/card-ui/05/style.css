@@ -1,9 +1,49 @@
 /* Fontawesome 4.7 */
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
 @font-face {
-  font-family: 'GmarketSansMedium';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.heading {
+  font-family: 'GmarketSanslight';
+  font-size: 66px;
+  text-align: center;
+  font-weight: normal;
+}
+.heading span {
+  color: coral;
+}
+
+/* Shopping mall UI Items */
+.items-inner {
+  width: 1350px;
+  margin: auto;
+  border: 1px solid #000;
+}
+.items {
+  display: flex;
+  /* gap: 10px; */
+}
+.item {
+  height: 400px;
+  border: 1px solid #000;
+  flex: 1;
+  margin-right: 10px;
+}
+.item:last-child {
+  margin-right: 0;
 }
