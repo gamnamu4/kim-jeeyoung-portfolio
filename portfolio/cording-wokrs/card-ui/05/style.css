@@ -40,15 +40,30 @@ body {
 .items {
   display: flex;
   gap: 20px;
+  counter-reset: item;
 }
 .item {
   height: 450px;
   flex: 1;
-  /* margin-right: 10px; */
 }
-/* .item:last-child {
-  margin-right: 0;
-} */
+.item:hover:before {
+  background-color: crimson;
+}
+.item:before {
+  content: counter(item);
+  counter-increment: item;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: gray;
+  z-index: 10;
+  border-radius: 0 0 5px 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  transition: 0.3s;
+}
 
 .photo {
   position: relative;
@@ -62,9 +77,6 @@ body {
 }
 .photo a img:first-child {
   z-index: 1;
-}
-.photo a img:last-child {
-  z-index: ;
 }
 .photo:hover a img:first-child {
   opacity: 0;
