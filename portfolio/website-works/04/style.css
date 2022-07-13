@@ -172,3 +172,77 @@ section.welcome {
   }
 }
 
+/* Section : Callaction */
+section.callaction {
+  height: 280px;
+  background: #4285f4 url(img/download-bg-desktop.svg) no-repeat center center;
+  padding-top: 70px;
+}
+.callaction-inner {
+  text-align: center;
+}
+.callaction-inner h1 {
+  color: #fff;
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+.callaction-inner .btn-download {
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+.callaction-inner .btn-download:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* Footer */
+footer {}
+.footer-inner {
+  width: 1250px;
+  margin: auto;
+}
+.sns-outer {
+  padding: 30px 0;
+  border-bottom: 1px solid #ddd;
+}
+.sns {
+  font-size: 24px;
+}
+.sns b {
+  font-weight: normal;
+}
+.sns a {
+  font-size: 24px;
+}
+
+.sitemap {
+  border: 1px solid #000;
+  padding: 50px 0;
+}
+.link-items {
+  overflow: hidden;
+}
+.link-item {
+  float: left;
+  width: 20%;
+}
+.link-item-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.link-item-content {
+  line-height: 2.3em;
+}
+.link-item-content a {
+  display: block;
+  font-size: 14px;
+  color: #555;
+}
+.link-item-content a:hover {
+  color: #000;
+}
+
+.copyright {
+  height: 400px;
+}
