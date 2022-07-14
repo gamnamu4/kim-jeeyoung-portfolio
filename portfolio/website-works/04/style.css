@@ -216,7 +216,6 @@ footer {}
 }
 
 .sitemap {
-  border: 1px solid #000;
   padding: 50px 0;
 }
 .link-items {
@@ -244,5 +243,37 @@ footer {}
 }
 
 .copyright {
-  height: 400px;
+  padding: 50px 0;
+  border-top: 1px solid #ddd;
+  padding-bottom: 70px;
+}
+.logo-footer {
+  float: left;
+  transform: translateY(-4px);
+}
+.policy {
+  float: left;
+}
+.policy a {
+  margin: 5px;
+}
+.policy a:after {
+  content: '|';
+  font-size: 14px;
+  padding-left: 10px;
+  color: #ccc;
+}
+.policy a:last-child:after {
+  display: none;
+}
+.language {
+  float: right;
+}
+.language i {
+  font-size: 24px;
+  transform: translateY(4px);
+}
+.language select {
+  font-size: 16px;
+  padding: 3px;
 }
