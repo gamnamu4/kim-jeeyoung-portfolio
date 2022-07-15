@@ -83,6 +83,16 @@
     border-bottom: 1px solid #ddd;
     margin-top: 20px;
     padding-bottom: 10px;
+    position: relative;
+  }
+  .link-item-title:after {
+    content: '\e942';
+    font-family: xeicon;
+    position: absolute;
+    right: 10px;
+  }
+  .link-item-title.active:after {
+    transform: rotate(180deg);
   }
   .link-item-content {
     display: none;

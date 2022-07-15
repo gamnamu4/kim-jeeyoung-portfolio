@@ -11,8 +11,10 @@ $(function(){
 
   // Sitemap accordion
   $('.link-item-title').click(function(){
-    // $(this).next().slideToggle()
     $(this).next().slideDown()
     $(this).parent().siblings().children('.link-item-content').slideUp()
+
+    $(this).addClass('active')
+    $(this).parent().siblings().children('.link-item-title').removeClass('active')
   })
 })
