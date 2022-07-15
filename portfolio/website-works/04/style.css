@@ -202,7 +202,9 @@ section.callaction {
 }
 
 /* Footer */
-footer {}
+footer {
+  padding: 0 20px;
+}
 .footer-inner {
   width: 1250px;
   margin: auto;
@@ -248,6 +250,7 @@ footer {}
   color: #000;
 }
 
+/* Copyright */
 .copyright {
   padding: 50px 0;
   border-top: 1px solid #ddd;

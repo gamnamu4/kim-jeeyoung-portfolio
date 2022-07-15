@@ -1,5 +1,8 @@
 @media (max-width: 768px) {
   /* Common CSS */
+  section {
+    padding: 0 20px !important;
+  }
   .inner {
     width: 100%;
   }
@@ -21,6 +24,18 @@
   section.feature.edit .inner .photo {
     order: 2;
   }
+  section.feature {
+    padding: 25px 0;
+    line-height: 1.5em;
+  }
+  .decs {
+    padding: 0 20px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+  }
+  .decs h1 {
+    font-size: 24px;
+  }
 
   /* Header */
   header .btn-download {
@@ -29,7 +44,11 @@
 
   /* Section: welcome */
   .heading {
-    width: 100%;
+    width: 80%;
+  }
+  .heading h1 {
+    font-size: 32px;
+    line-height: 1.5em;
   }
   .download span {
     display: none;
@@ -40,21 +59,51 @@
   .next-section {
     transform: translateX(-50%) scale(0.8);
   }
+
   /* Section : Callaction */
   section.callaction {
   background-image: url(img/download-bg-mobile.svg);
+  padding-top: 80px !important;
+  }
+  section.callaction h1 {
+    font-size: 26px;
   }
 
   /* Footer */
   .footer-inner {
     width: 100%;
   }
+
+  /* Sitemap */
   .link-item {
     font: none;
     width: 100%;
   }
+  .link-item-title {
+    border-bottom: 1px solid #ddd;
+    margin-top: 20px;
+    padding-bottom: 10px;
+  }
+  .link-item-content {
+    display: none;
+  }
+
+  /* Copyright */
+  .copyright {
+    text-align: center;
+    border: none;
+    padding-top: 0;
+  }
+  .logo-footer {
+    width: 100%;
+  }
   .policy {
     float: none;
+    margin-bottom: 20px;
+  }
+  .policy a {
+    margin: 2px;
+    font-size: 14px;
   }
   .language {
     font: none;
