@@ -1,0 +1,62 @@
+@media (max-width: 768px) {
+  /* Common CSS */
+  .inner {
+    width: 100%;
+  }
+  .inner > div {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  section.feature.smart .inner,
+  section.feature.edit .inner {
+    display: flex;
+    flex-direction: column;
+  }
+  section.feature.smart .inner .decs,
+  section.feature.edit .inner .decs {
+    order: 1;
+  }
+  section.feature.smart .inner .photo,
+  section.feature.edit .inner .photo {
+    order: 2;
+  }
+
+  /* Header */
+  header .btn-download {
+    width: 150px;
+  }
+
+  /* Section: welcome */
+  .heading {
+    width: 100%;
+  }
+  .download span {
+    display: none;
+  }
+  .statics {
+    display: none;
+  }
+  .next-section {
+    transform: translateX(-50%) scale(0.8);
+  }
+  /* Section : Callaction */
+  section.callaction {
+  background-image: url(img/download-bg-mobile.svg);
+  }
+
+  /* Footer */
+  .footer-inner {
+    width: 100%;
+  }
+  .link-item {
+    font: none;
+    width: 100%;
+  }
+  .policy {
+    float: none;
+  }
+  .language {
+    font: none;
+  }
+}

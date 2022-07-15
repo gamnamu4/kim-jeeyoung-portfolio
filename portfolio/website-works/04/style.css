@@ -160,6 +160,7 @@ section.welcome {
   text-align: center;
   font-size: 36px;
   line-height: 65px;
+  background-color: #fff;
 }
 .next-section a i {
   animation: next 1.3s linear infinite;
