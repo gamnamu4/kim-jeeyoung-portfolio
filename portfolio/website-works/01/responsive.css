@@ -1,157 +1,19 @@
 @media (max-width: 768px) {
-  html {
-    scroll-behavior: smooth;
-  }
   /* Entire Layout */
   .cd-section {
-    height: auto;
+    height: 100vh;
   }
   .cd-section > div {
-    height: auto;
+    height: 100%;
+    position: relative;
   }
   .content {
-    position: static;
-    width: 100%;
-    height: 100%;
-  }
-
-  .about-items {
-  position: static;
-  transform: translateY(0%);
-  }
-  .about-heading {
-  position: static;
-  transform: translate(0%, 0%);
-}
-  .plan-feature {
-  position: static;
-  transform: translate(0%, 0%);
-  height: 100%;
-}
-.plan-feature > div {
-  height: auto;
-}
-.plan-info > div {
-  float: none;
-}
-.victory-jump img {
-  position: static;
-  transform: translate(0%, 0%);
-}
-
-.location-inner:before {
-  position: static;
-}
-.feature {
-  position: static;
-  transform: translate(0%, 0%);
-}
-
-.contact-feature {
-  position: static;
-  transform: translate(0%, 0%);
-}
-
-  /* header */
-  header {
-    transition: 0.5s;
-    z-index: 100;
-  }
-  header.active {
-    background-color: #fff;
-    border: 1px solid #eee;
-  }
-  .menu {
-    display: block;
-  }
-  .slogan {
-    display: none;
-  }
-  .gnb {
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 270px;
-    right: -250px;
-    height: 100vh;
-    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.137);
-    transition: 0.5s;
-  }
-  .gnb.active {
-    right: 0;
-  }
-  .menu {
-    line-height: 40px;
-    margin-top: 60px;
-  }
-  .menu a {
-    display: block;
-    text-align: right;
-    padding-left: 20px;
-    color: #000;
-    font-size: 20px;
-  }
-
-  /* trigger */
-  .trigger {
-    display: block;
-    width: 24px;
-    height: 14px;
     position: absolute;
-    right: 20px;
-    top: 20px;
-  }
-  .trigger span {
-    position: absolute;
-    background-color: #000;
-    width: 100%;
-    height: 2px;
-    transition: 0.5s;
-  }
-  .trigger span:nth-child(1) {
-    top: 0;
-  }
-  .trigger span:nth-child(2) {
-    top: 50%;
-    width: 70%;
-  }
-  .trigger span:nth-child(3) {
-    top: 100%;
-  }
-  .trigger.active span:nth-child(1) {
-    top: 50%;
-    transform: rotate(45deg);
-  }
-  .trigger.active span:nth-child(2) {
-    top: 50%;
-    width: 70%;
-    opacity: 0;
-  }
-  .trigger.active span:nth-child(3) {
-    top: 50%;
-    transform: rotate(-45deg);
-  }
-
-  /* Gototop */
-  .gototop {
-    position: fixed;
-    bottom: 20px;
+    width: calc(100% - 40px);
+    height: calc(100% - 80px);
     left: 20px;
-    border: 3px solid red;
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    transform: translateY(30px);
-    opacity: 0;
-    transition: 0.5s;
-  }
-  .gototop.active {
-    opacity: 1;
-    transform: translateX(0);
-  }
+    bottom: 20px;
+    overflow: hidden;
+  } 
 }
 

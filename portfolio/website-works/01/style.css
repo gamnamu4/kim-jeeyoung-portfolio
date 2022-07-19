@@ -9,7 +9,7 @@
 
 /* Reset CSS */
 * { box-sizing: border-box; }
-ul { list-style: none; padding: 0; }
+ul { list-style: none; }
 a { text-decoration: none; }
 
 /* Default CSS */
@@ -43,23 +43,18 @@ body {
 /* Header */
 header {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
 }
 .gnb-inner {
+  /*border: 1px solid #000;*/
   width: calc(100% - 40px);
   margin: auto;
-  overflow: hidden;
+  height: 60px;
   line-height: 60px;
 }
 .logo {
   float: left;
 }
-.logo img {
-  padding-top: 16px;
-}
-.logo a {}
 .gnb {
   float: right;
 }
@@ -71,330 +66,14 @@ header {
   font-size: 16px;
   font-style: italic;
 }
-.trigger {
-  display: none;
-}
 
-/* hiring button */
-.btn-hiring {
-  position: absolute;
-  right: 50px;
-  bottom: 50px;
-  color: #fff;
-  background-color: #000;
-  padding: 10px 20px;
-  border-radius: 20px;
-}
 
-/* ########### section : about ########### */
-.about-inner {
-  height: 100%;
-  background: #0dace3 url(../01/images/line-drawing.png) no-repeat right bottom;
-}
-.about-items {
-  width: 60%;
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 100px;
-}
-.item {
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-.item:hover img {
-  filter: invert(0);
-}
-.item:hover h3 {
-  color: #000;
-}
-.item img {
-  height: 130px;
-  float: left;
-  margin-right: 40px;
-  filter: invert(1);
-  transition: 0.3s;
-}
-.item h3 {
-  font-size: 28px;
-  font-weight: 500;
-  margin: 0;
-  transition: 0.5s;
-  letter-spacing: -1px;
-}
-.item p {
-  font-size: 18px;
-  overflow: hidden;
-}
 
-/* ########### section : plan ########## */
-.plan-inner {
-  background-color: #1d1b24;
-  height: 100%;
-}
-.plan-feature {
-  width: 80%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.plan-feature > div {
-  height: 300px;
-  color: #bbb;
-}
-.plan-info {}
-.plan-info > div {
-  float: left;
-}
-.plan-heading {
-  width: 70%;
-  padding-right: 50px;
-}
-.plan-heading h2 {
-  color: #fff;
-  margin: 0;
-}
-.plan-heading p {
-  font: 16px;
-  line-height: 1.6em;
-}
-.plan-photo {
-  width: 30%;
-}
-.plan-photo img {
-  height: 265px;
-}
-.plan-heading hr.bar,
-.history-info hr.bar {
-  background-color: dodgerblue;
-  display: inline-block;
-}
-.history-info {
-}
-.history-slider {
-  border: 1px solid red;
-  
-}
 
-/* ########### section : awards winner ########## */
-.awards-inner {
-  height: 100%;
-  border: 1px solid #ddd;
-}
-.awards-inner > div {
-  float: left;
-  width: 50%;
-  height: 100%;
-  position: relative;
-}
-.about-awards {
-  background-color: #1a1f24;
-  color: #fff;
-}
-.about-heading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 70%;
-}
-.about-heading h2 {
-  margin: 0;
-}
-.about-heading p {
-  color: #999;
-  font-size: 16px;
-  line-height: 1.5em;
-}
-.view-awards {
-  transition: 0.3s;
-  color: #ddd;
-  border: 1px solid #bbb;
-  padding: 5px 15px;
-  border-radius: 20px;
-  display: inline-block;
-  margin-top: 10px;
-}
-.view-awards:hover {
-  background-color: #31c0ce;
-  color: #fff;
-  border-color: transparent;
-}
-.victory-jump {
-  background-color: #fff;
-}
-.victory-jump img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-}
-hr.bar {
-  width: 50px;
-  height: 4px;
-  border: none;
-  background-color: crimson;
-  margin: 30px auto;
-}
 
-/* ########### section : location ########## */
-.location-inner {
-  background: url(../01/images/background-location.jpg) no-repeat center center;
-  height: 100vh;
-}
-.location-inner:before {
-  content: '';
-  background-color: rgba(0, 0, 0, 0.769);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.feature {
-  width: 70%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #bbb;
-}
-.feature > div {
-  float: left;
-}
-.office {
-  width: 60%;
-  padding-right: 100px;
-}
-.service {
-  width: 40%;
-}
-.Headquarters {}
-.Headquarters b {}
-.office b {
-  font-weight: normal;
-}
-.office h2 {
-  color: #1db1f0;
-  font-weight: 500;
-  margin: 0;
-  margin-top: 15px;
-  text-align: left;
-}
-.office p {
-  font-size: 16px;
-  line-height: 1.5em;
-}
-.office span {
-  color: #fff;
-}
-.customer-service {
-  margin-top: 40px;
-}
-.service-item {
-  margin-bottom: 40px;
-}
-.service-item .fa {
-  color: #1db1f0;
-  font-size: 40px;
-}
-.service-item h3 {
-  color: #fff;
-  font-size: 22px;
-  margin: 0;
-}
 
-/* ########### section : location ########## */
-.contact-inner {
-  background-color: #fff;
-  height: 100%;
-  border: 1px solid #ddd;
-}
-.contact-feature {
-  width: 70%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.contact-feature > div {
-  float: left;
-  width: 50%;
-  padding: 20px;
-}
-.contact-form {}
-.contact-form h3 {
-  font-size: 30px;
-  font-weight: normal;
-  margin: 0;
-}
-.send-box {}
-.send-box label {
-  display: block;
-  font-weight: bold;
-  font-size: 16px;
-  margin: 10px 0;
-  margin-top: 20px;
-}
-.send-box label span {
-  color: crimson;
-  font-weight: normal;
-}
-.send-box input[type=email],
-.send-box input[type=text],
-.send-box textarea {
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 10px;
-  outline: none;
-  width: 100%;
-  transition: 0.5s;
-}
-.send-box input[type=email]:hover,
-.send-box input[type=text]:hover,
-.send-box textarea:hover, {
-  border: 1px solid #0088cc;
-  box-shadow: 0 0 5px #0088ccb4;
-}
-.send-box input[type=email]:focus,
-.send-box input[type=text]:focus,
-.send-box textarea:focus {
-  border: 1px solid #0088cc;
-  box-shadow: 0 0 5px #0088ccb4;
-  background-color: #eee;
-}
-.send-box button {
-  background-color: #0088cc;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: 0.3;
-  margin-top: 10px;
-  width: 200px;
-}
-.sand-box button:hover {
-  color: #000;
-}
 
-.contact-info {
-}
-.contact-info h4 {
-  font-weight: normal;
-  font-size: 20px;
-  margin: 0;
-  margin-top: 10px;
-}
-.contact-info h4 b {}
-.contact-info ul {}
-.contact-info ul li {
-  line-height: 2em;
-}
-.contact-info p {}
-.contact-info ul li:last-child {
-  color: #0088cc;
-}
+
+
+
+

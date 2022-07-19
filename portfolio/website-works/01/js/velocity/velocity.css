@@ -48,15 +48,14 @@ Main Components
 }
 
 .cd-section h2 {
-  /* line-height: 100vh; */
-  /* text-align: center; */
+  line-height: 100vh;
+  text-align: center;
   font-size: 2.4rem;
 }
-.cd-section:first-of-type > div {
-}
+
 .cd-section:first-of-type > div::before {
   /* alert -> all scrolling effects are not visible on small devices */
-  /* content: 'Effects not visible on mobile!'; */
+  content: 'Effects not visible on mobile!';
   position: absolute;
   width: 100%;
   text-align: center;
@@ -179,7 +178,7 @@ Main Components
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: url(/portfolio/website-works/01/js/velocity/cd-icon-arrow.svg) no-repeat center center;
+  background: url(cd-icon-arrow.svg) no-repeat center center;
 }
 .cd-vertical-nav a.cd-prev {
   -webkit-transform: rotate(180deg);
