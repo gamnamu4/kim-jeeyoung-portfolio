@@ -237,6 +237,7 @@ footer {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
+  pointer-events: none;
 }
 .link-item-content {
   line-height: 2.3em;

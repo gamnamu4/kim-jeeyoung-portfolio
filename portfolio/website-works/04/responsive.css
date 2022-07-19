@@ -84,6 +84,7 @@
     margin-top: 20px;
     padding-bottom: 10px;
     position: relative;
+    pointer-events: all;
   }
   .link-item-title:after {
     content: '\e942';
