@@ -11,5 +11,50 @@
     width: 100%;
     height: 100%;
   } 
+
+  /* Header */
+  .menu {
+    display: block;
+  }
+  .slogan {
+    display: none;
+  }
+  .gnb {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.093);
+  }
+  .menu {
+    line-height: 40px;
+    margin-top: 60px;
+  }  
+  .menu a {
+    text-align: right;
+    display: block;
+    padding-right: 20px;
+    color: #000;
+    font-size: 20px;
+  }
+
+  .trigger {
+    display: block;
+    width: 24px;
+    height: 14px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+  }
+  .trigger span {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+    transition: 0.5s;
+  }
 }
 
