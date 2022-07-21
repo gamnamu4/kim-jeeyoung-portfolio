@@ -20,7 +20,7 @@
     display: none;
   }
   .gnb {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     top: 0;
     right: 0;
@@ -47,7 +47,6 @@
     position: absolute;
     right: 20px;
     top: 20px;
-    z-index: 100;
   }
   .trigger span {
     position: absolute;
@@ -55,6 +54,15 @@
     width: 100%;
     background-color: #000;
     transition: 0.5s;
+  }
+  .trigger span:nth-child(1) {
+    top: 0;
+  }
+  .trigger span:nth-child(2) {
+    top: 50%;
+  }
+  .trigger span:nth-child(3) {
+    top: 100%;
   }
 }
 

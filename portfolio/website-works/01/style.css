@@ -9,7 +9,7 @@
 
 /* Reset CSS */
 * { box-sizing: border-box; }
-ul { list-style: none; }
+ul { list-style: none; padding: 0;}
 a { text-decoration: none; }
 
 /* Default CSS */
@@ -43,10 +43,11 @@ body {
 /* Header */
 header {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
 }
 .gnb-inner {
-  /*border: 1px solid #000;*/
   width: calc(100% - 40px);
   margin: auto;
   height: 60px;
