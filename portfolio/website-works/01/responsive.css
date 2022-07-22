@@ -1,4 +1,15 @@
 @media (max-width: 768px) {
+  /* Gototop */
+  .gototop {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+  }
+
+
   /* Entire Layout */
   .cd-section {
     height: auto;
@@ -89,12 +100,6 @@
     transform: rotate(-45deg);
   }
   
-  /* Gototop */
-  .gototop {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 100;
-  }
+  
 }
 
