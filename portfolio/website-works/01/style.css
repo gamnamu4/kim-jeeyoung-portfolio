@@ -56,6 +56,9 @@ header {
 .logo {
   float: left;
 }
+.logo img {
+  padding-top: 17px;
+}
 .gnb {
   float: right;
 }
@@ -70,6 +73,8 @@ header {
 .trigger {
   /* display: none; */
 }
+
+
 
 
 

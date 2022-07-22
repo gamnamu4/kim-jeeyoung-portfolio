@@ -13,6 +13,13 @@
   } 
 
   /* Header */
+  header {
+    transition: 0.5s;
+  }
+  header.active {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
   .menu {
     display: block;
   }
@@ -80,5 +87,14 @@
   .trigger.active span:nth-child(3) {
     top: 50%;
     transform: rotate(-45deg);
+  }
+  
+  /* Gototop */
+  .gototop {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+  }
 }
 
