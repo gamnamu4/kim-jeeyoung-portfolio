@@ -74,10 +74,130 @@ header {
   /* display: none; */
 }
 
+/* Hiring button */
+.btn-hiring {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  color: #fff;
+  background-color: #000;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.582);
+  transition: 0.5s;
+}
+.btn-hiring .fa {
+  transform: rotateY(180deg);
+  margin-right: 5px;
+}
+.btn-hiring:active {
+  transform: scale(0);
+}
+/* ############ Section : about ########### */
+.about-inner {
+  background: url(images/line-drawing.png) no-repeat right bottom;
+  height: 100%;
+  background-color: #0dace3;
+}
+.about-items {
+  width: 60%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 100px;
+}
+.item {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.item:hover h3 {
+  color: #000;
+  letter-spacing: 1px;
+}
+.item:hover img {
+  filter: invert(0);
+}
+.item img {
+  height: 100px;
+  float: left;
+  margin-right: 20px;
+  filter: invert(1);
+  transition: 0.5s;
+}
+.item h3 {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0;
+  transition: 0.5s;
+  letter-spacing: -1px;
+}
+.item p {
+  overflow: hidden;
+  font-size: 18px;
+}
 
-
-
-
+/* ############ Section : awards winner ########## */
+.awards-inner {
+  height: 100%;
+  border: 1px solid #ddd;
+}
+.awards-inner > div {
+  float: left;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.about-awards {
+  background-color: #1a1f24;
+  color: #fff;
+}
+.about-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 70%;
+}
+.about-heading h2 {
+  margin: 0;
+}
+.victory-jump {
+  background-color: #fff;
+}
+.victory-jump img {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+hr.bar {
+  width: 50px;
+  height: 4px;
+  border: none;
+  background-color: crimson;
+  margin: 30px auto;
+}
+.about-heading p {
+  color: #999;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin-bottom: 40px;
+}
+.view-awards {
+  color: #bbb;
+  border: 1px solid #bbb;
+  padding: 5px 15px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.view-awards:hover {
+  background-color: #31c0ce;
+  color: #fff;
+  border-color: transparent;
+}
 
 
 

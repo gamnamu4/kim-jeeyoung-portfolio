@@ -1,15 +1,4 @@
 @media (max-width: 768px) {
-  /* Gototop */
-  .gototop {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 1;
-    width: 40px;
-    height: 40px;
-  }
-
-
   /* Entire Layout */
   .cd-section {
     height: auto;
@@ -26,6 +15,7 @@
   /* Header */
   header {
     transition: 0.5s;
+    z-index: 100;
   }
   header.active {
     background-color: #fff;
@@ -100,6 +90,32 @@
     transform: rotate(-45deg);
   }
   
-  
+  /* Gototop */
+  .gototop {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .gototop.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Hiring button */
+  .btn-hiring {
+    right: 15px;
+    bottom: 20px;
+  }
 }
 
