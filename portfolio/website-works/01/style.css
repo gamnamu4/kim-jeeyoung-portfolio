@@ -137,7 +137,53 @@ header {
   font-size: 18px;
 }
 
-/* ############ Section : awards winner ########## */
+/* ############ Section : Plan ############ */
+.plan-inner {
+  background-color: #1d1b24;
+  height: 100%;
+}
+.plan-feature {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.plan-feature > div {
+  height: 300px;
+  color: #bbb;
+}
+.plan-info {}
+
+.plan-info > div {
+  float: left;
+}
+.plan-heading {
+  width: 70%;
+  padding-right: 80px;
+}
+.plan-heading h2 {
+  color: #fff;
+  margin: 0;
+}
+.plan-heading p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.plan-photo {
+  width: 30%;
+}
+.plan-photo img {
+  height: 265px;
+
+}
+.plan-heading hr.bar {
+  background-color: dodgerblue;
+}
+.history-info {}
+
+
+/* ############ Section : awards ############ */
 .awards-inner {
   height: 100%;
   border: 1px solid #ddd;
@@ -277,6 +323,7 @@ hr.bar {
 .contact-feature > div {
   float: left;
   width: 50%;
+  padding: 20px;
 }
 .contact-form {}
 .contact-form h3 {
@@ -296,14 +343,52 @@ hr.bar {
   font-weight: normal;
 }
 .send-box input[type=email],
-.send-box input[type=text] {
+.send-box input[type=text],
+.send-box textarea {
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 3px;
   outline: none;
+  width: 100%;
+  transition: 0.3s;
 }
-.send-box button {}
+.send-box button {
+  background-color: #0088cc;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.send-box input[type=email]:hover,
+.send-box input[type=text]:hover,
+.send-box textarea:hover,
+.send-box input[type=email]:focus {
+  border: 1px solid #0088cc;
+  box-shadow: 0 0 5px #0088cc;
+  background-color: #eee;
+}
+.send-box button:hover {
+  background-color: #000;
+}
 
 .contact-info {}
+.contact-info h4 {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 0;
+}
+.contact-info ul li {
+  line-height: 2em;
+}
+.contact-info ul li:last-child {
+  color: #0088cc;
+}
+.contact-info p {
+  line-height: 1.5em;
+}
 
 
