@@ -266,10 +266,8 @@ hr.bar {
 .contact-inner {
   background-color: #fff;
   height: 100%;
-  border: 1px solid #000;
 }
 .contact-feature {
-  border: 1px solid red;
   width: 70%;
   position: absolute;
   top: 50%;
@@ -277,11 +275,35 @@ hr.bar {
   transform: translate(-50%, -50%);
 }
 .contact-feature > div {
-  border: 1px solid #000;
   float: left;
   width: 50%;
 }
 .contact-form {}
+.contact-form h3 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+}
+.contact-form h3 b {}
+.send-box {}
+.send-box label {
+  display: block;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.send-box label span {
+  color: crimson;
+  font-weight: normal;
+}
+.send-box input[type=email],
+.send-box input[type=text] {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 3px;
+  outline: none;
+}
+.send-box button {}
+
 .contact-info {}
 
 
