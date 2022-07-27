@@ -262,6 +262,26 @@ hr.bar {
   margin: 0;
 }
 
-
+/* ############ Section : location ########## */
+.contact-inner {
+  background-color: #fff;
+  height: 100%;
+  border: 1px solid #000;
+}
+.contact-feature {
+  border: 1px solid red;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-feature > div {
+  border: 1px solid #000;
+  float: left;
+  width: 50%;
+}
+.contact-form {}
+.contact-info {}
 
 
