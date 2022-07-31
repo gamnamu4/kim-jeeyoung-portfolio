@@ -179,6 +179,7 @@ header {
 }
 .plan-heading hr.bar {
   background-color: dodgerblue;
+  display: inline-block;
 }
 .history-info {}
 
