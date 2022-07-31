@@ -177,11 +177,14 @@ header {
   height: 265px;
 
 }
-.plan-heading hr.bar {
+.plan-heading hr.bar,
+.history-info hr.bar {
   background-color: dodgerblue;
   display: inline-block;
 }
-.history-info {}
+.history-slider {
+  border: 1px solid red;
+}
 
 
 /* ############ Section : awards ############ */
