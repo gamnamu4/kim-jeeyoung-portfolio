@@ -93,6 +93,55 @@ header {
 .btn-hiring:active {
   transform: scale(0);
 }
+
+/* ################ Section : home ################ */
+.home-inner {
+  background-color: #fff;
+  height: 100%;
+}
+.welcome-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.3em;
+  margin: 0;
+  font-family: 'Source Sans Pro', 'sans-serif';
+}
+.welcome-text span {
+  display: block;
+  font-size: 26px;
+}
+.welcome-text span .fa {
+  color: #0088cc;
+}
+.opacity-image {
+  background: url(images/section-bg-01.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  display: none;
+}
+.home-heading {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.home-heading span {
+  display: block;
+  font-size: 115px;
+  color: #fff;
+  font-weight: 600;
+}
+
+@keyframes identifier {
+  
+}
+
 /* ################ Section : about ################ */
 .about-inner {
   background: url(images/line-drawing.png) no-repeat right bottom;
