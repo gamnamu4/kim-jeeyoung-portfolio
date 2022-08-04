@@ -400,7 +400,7 @@ input[id=tab3]:checked ~ .tabs {
 
 }
 
-/* ############ Section : Plan ############ */
+/* ################ Section : Plan ################# */
 .plan-inner {
   background-color: #1d1b24;
   height: 100%;
@@ -416,8 +416,6 @@ input[id=tab3]:checked ~ .tabs {
   height: 300px;
   color: #bbb;
 }
-.plan-info {}
-
 .plan-info > div {
   float: left;
 }
@@ -471,7 +469,7 @@ input[id=tab3]:checked ~ .tabs {
   margin: 0;
 }
 
-/* ############ Section : awards ############ */
+/* ################ Section : awards ################ */
 .awards-inner {
   height: 100%;
   border: 1px solid #ddd;
@@ -533,10 +531,11 @@ hr.bar {
   border-color: transparent;
 }
 
-/* ############ Section : location ########## */
+/* ################# Section : location ############# */
 .location-inner {
   background: url(images/background-location.jpg) no-repeat center center;
   height: 100%;
+  position: relative;
 }
 .location-inner:before {
   content: '';

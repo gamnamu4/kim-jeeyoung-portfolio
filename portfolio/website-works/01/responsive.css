@@ -123,11 +123,11 @@
 
   /* Show hide section */
   #home,
-  /* #about, */
+  #about,
   #project,
   #plan,
   #awards,
-  #location,
+  /* #location, */
   #contact {
     display: none;
   }
@@ -163,5 +163,66 @@
   .item img {
     float: none;
   }
-}
+  
+  /* ################ Section : Plan ################# */
+  .plan-inner {
+    height: auto; 
+    padding: 20px;
+  }
+  .plan-feature {
+    width: 100%;
+    position: static;
+    transform: none;
+  }
+  .plan-feature > div {
+    height: auto;
+  }
+  .plan-info {
+    margin-bottom: 40px;
+  }
+  .plan-info > div {
+    float: none;
+    width: 100%;
+  }
+  .plan-heading {
+    width: 100%;
+    padding-right: 0;
+  }
+  .plan-photo img {
+    width: 100%;
+    height: auto;
+  }
 
+  /* ################ Section : awards ################ */
+  .awards-inner {
+    height: auto;
+  }
+  .awards-inner > div {
+    float: none;
+    width: 100%;
+  }
+  .about-heading,
+  .victory-jump img {
+    position: static;
+    transform: none;
+    padding: 40px 20px;
+    width: 100%;
+  }
+
+  /* ################# Section : location ############# */
+  .location-inner {
+    height: auto;
+  }
+  .feature {
+    transform: none;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .feature > div {
+    float: none;
+    width: 100%;
+    padding: 20px;
+  }
+}
