@@ -253,7 +253,7 @@ header {
   font-size: 18px;
 }
 
-/* ############## Section : project ############ */
+/* ################ Section : project ############## */
 .project-inner {
   height: 100%;
   overflow: hidden;
@@ -300,7 +300,6 @@ input[name=tabmenu] {
   border-radius: 50%;
   margin: 10px;
   position: relative;
-  
 }
 .btn label:before {
   content: '';
@@ -322,7 +321,6 @@ input[id=tab2]:checked ~ .btn label[for=tab2]:before,
 input[id=tab3]:checked ~ .btn label[for=tab3]:before {
   border: 1px solid #aaa;
 }
-
 input[id=tab1]:checked ~ .tabs {
   margin-left: 0;
 }
@@ -595,7 +593,7 @@ hr.bar {
   margin: 0;
 }
 
-/* ############ Section : location ########## */
+/* ################ Section : location ################ */
 .contact-inner {
   background-color: #fff;
   height: 100%;
