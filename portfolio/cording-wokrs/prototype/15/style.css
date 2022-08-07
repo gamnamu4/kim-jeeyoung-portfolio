@@ -16,7 +16,6 @@ a {
   text-decoration: none;
 }
 
-.container {}
 header {
   border-bottom: 1px solid lightgray;
   background-color: #fff;
@@ -36,7 +35,6 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.login-type {}
 .login-type h1 {
   margin-top: 0;
   font-size: 38px;

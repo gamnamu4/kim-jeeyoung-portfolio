@@ -395,7 +395,6 @@ input[id=tab3]:checked ~ .tabs {
   position: absolute;
   top: -10px;
   left: 10px;
-
 }
 
 /* ################ Section : Plan ################# */
@@ -660,7 +659,6 @@ hr.bar {
   background-color: #000;
 }
 
-.contact-info {}
 .contact-info h4 {
   font-weight: normal;
   font-size: 20px;

@@ -16,7 +16,6 @@ body {
 section {
   width: 900px;
 }
-.heading {}
 .tab-inner {
   margin-top: 30px;
 }
@@ -46,7 +45,6 @@ section {
   background-color: #fff;
   border-top: 2px solid coral;
 }
-.tabs {}
 .tabs div {
   background-color: #fff;
   padding: 20px;

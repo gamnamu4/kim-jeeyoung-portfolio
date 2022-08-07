@@ -77,7 +77,6 @@ input[id=tab3]:checked ~ .heading .text3 {
   transform: translateY(-50px);
   opacity: 0;
   transition: 0.5s;
-  
 }
 .text1 span,
 .text2 span,
