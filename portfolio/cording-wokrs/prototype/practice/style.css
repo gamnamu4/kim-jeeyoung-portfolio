@@ -34,6 +34,12 @@ a {
   color: #fff;
 }
 
+/* Common CSS */
+section {
+  position: relative;
+  
+}
+
 /* Header */
 header {
   overflow: hidden;
@@ -60,7 +66,7 @@ header {
   text-transform: capitalize;
 }
 
-/* Section: welcome */
+/* Section : welcome */
 .welcome {
   height: 80vh;
   background: url(images/main.jpg) no-repeat center center;
@@ -102,6 +108,7 @@ header {
   flex: 2;
   margin-right: -5px;
   font-size: 18px;
+  outline: none;
 }
 .getstarted button {
   border: none;
@@ -120,4 +127,33 @@ header {
   font-size: 50px;
   border: 3px solid #000;
   color: #000; */
+}
+
+/* Section : enjoy, download, watch, create, faq */
+.enjoy,
+.download,
+.watch,
+.create {
+  height: 500px;
+  margin-top: 50px;
+}
+.inner {
+  margin: auto;
+  border-bottom: 5px solid #bbb;
+  overflow: hidden;
+  width: 1150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.inner > div {
+  float: left;
+  width: 50%;
+}
+.create .inner {
+  border: none;
+}
+.desc {
+  margin-top: 120px;
 }
