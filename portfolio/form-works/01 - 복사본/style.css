@@ -34,15 +34,17 @@ font-family: 'Source Sans Pro', sans-serif;
 body {
   background-color: rgba(187, 187, 187, 0.301);
 }
-
 .container { 
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);  
 }
+
+/* Common */
 .member img {
-  border: 1px solid #000;
+  width: 150px;
+  margin: auto;
 }
 .member > div {
   padding: 10px;
@@ -52,7 +54,33 @@ body {
 }
 input:not(input[type=radio]) {
   width: 100%;
-  border: none;
+  border: 0.5px solid rgba(0, 0, 0, 0.192);
   height: 30px;
   margin-top: 10px;
+}
+.birth div {
+  display: flex;
+  /* border: 1px solid #000; */
+  gap: 3;
+}
+/* input[type=radio] {
+  display: none;
+} */
+.gender {
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  background-color: #fff;
+  background: url(img/icon-radio.png) center left no-repeat;
+}
+.tel-number div {
+  display: flex;
+  gap: ;
+}
+.tel-number > div > input[type=tel] {
+  flex: 2;
+}
+.tel-number > div > input[type=button] {
+  flex: 1;
+} 
+.member-foooter {
+  text-align: center;
 }
